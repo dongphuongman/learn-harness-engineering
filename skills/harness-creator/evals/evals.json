@@ -11,7 +11,7 @@
         "AGENTS.md includes startup workflow (read files, run init, check feature list)",
         "AGENTS.md includes one-feature-at-a-time policy",
         "feature_list.json has valid JSON with id, name, description, status fields",
-        "init.sh runs npm install, type check, and test commands",
+        "init.sh runs install, type/static check, test, and build commands when available",
         "All files are in project root directory"
       ]
     },
@@ -37,7 +37,7 @@
       "expectations": [
         "Assessment covers all 5 subsystems: Instructions, State, Verification, Scope, Lifecycle",
         "Each subsystem scored 1-5 with justification",
-        "Lowest-scoring subsystem identified as bottleneck",
+        "Lowest-scoring subsystem identified as bottleneck or candidate bottleneck",
         "Prioritized improvement plan with 2-3 concrete next steps"
       ]
     },
@@ -49,9 +49,9 @@
       "files": [],
       "expectations": [
         "Explicit verification commands listed (tests, lint, type-check, build)",
-        "AGENTS.md includes 'Definition of Done' section with verification requirement",
+        "AGENTS.md includes Definition of Done section with verification requirement",
         "End-of-session checklist includes verification evidence recording",
-        "Optional: quality score tracking mechanism described"
+        "Failure path says not to claim done when verification fails"
       ]
     },
     {
@@ -65,6 +65,71 @@
         "Auto-memory defined (agent-written, persistent)",
         "Type taxonomy with 3-4 types (e.g., user/feedback/project/reference)",
         "Clear guidance on what NOT to save (derivable content)"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tool Safety Design",
+      "prompt": "My custom coding agent can run shell commands and edit files. Design the tool registry and permission harness so it is powerful but does not silently do dangerous things.",
+      "expected_output": "Tool registry policy with per-call concurrency classification, default permissions, denial handling, and audit trail",
+      "files": [],
+      "expectations": [
+        "Sensitive tools default to ask or deny instead of allow",
+        "Concurrency safety is classified per call rather than per tool",
+        "Permission evaluation side effects are acknowledged and not cached unsafely",
+        "Audit trail records command, decision, and reason"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Context Budget Plan",
+      "prompt": "My agent loads too many docs at startup and gets slow. Design a context strategy that keeps important context while controlling token cost.",
+      "expected_output": "Progressive disclosure plan using select/write/compress/isolate operations and explicit context budgets",
+      "files": [],
+      "expectations": [
+        "Defines always-loaded metadata versus on-demand references",
+        "Uses SELECT, WRITE, COMPRESS, and ISOLATE operations",
+        "Includes hard caps or budget thresholds",
+        "Explains invalidation for memoized context builders"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Multi-Agent Coordination",
+      "prompt": "I want multiple agents to work on a large refactor without stepping on each other. Design a multi-agent harness and rules for delegation.",
+      "expected_output": "Coordinator/delegation design with ownership boundaries, context sharing policy, and merge/review gates",
+      "files": [],
+      "expectations": [
+        "Defines coordinator, worker, and optional reviewer responsibilities",
+        "Assigns disjoint file or module ownership",
+        "Prevents recursive fork children from forking again",
+        "Includes integration and verification gate before claiming done"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Lifecycle Bootstrap",
+      "prompt": "Every new session starts inconsistently. Design startup, hook, and handoff lifecycle rules so a new agent can resume safely.",
+      "expected_output": "Lifecycle bootstrap design with init.sh, clean-state checks, handoff reads, and hook trust boundaries",
+      "files": [],
+      "expectations": [
+        "init.sh is the standard startup and verification entrypoint",
+        "Startup reads AGENTS.md, feature_list.json, progress.md, and handoff when present",
+        "End-of-session procedure records evidence, blockers, and next step",
+        "Hooks are gated by trust and failure behavior is explicit"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Scripted Harness Validation",
+      "prompt": "Use the harness-creator scripts to scaffold a harness, validate it, and produce an HTML assessment report for a repository.",
+      "expected_output": "Commands using create-harness.mjs, validate-harness.mjs, and render-assessment-html.mjs plus interpretation of score",
+      "files": [],
+      "expectations": [
+        "Uses create-harness.mjs with a target directory",
+        "Uses validate-harness.mjs and explains five-subsystem score output",
+        "Uses render-assessment-html.mjs or run-benchmark.mjs with --html",
+        "Explains that structural benchmark complements but does not replace real before/after agent sessions"
       ]
     }
   ]

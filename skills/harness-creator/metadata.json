@@ -20,9 +20,11 @@
   "references": [
     "references/memory-persistence-pattern.md",
     "references/context-engineering-pattern.md",
+    "references/skill-runtime-pattern.md",
     "references/tool-registry-pattern.md",
     "references/multi-agent-pattern.md",
-    "references/lifecycle-bootstrap-pattern.md"
+    "references/lifecycle-bootstrap-pattern.md",
+    "references/gotchas.md"
   ],
   "triggers": [
     "harness engineering",
@@ -42,11 +44,18 @@
     "permission pipeline"
   ],
   "bundled": {
-    "scripts": [],
+    "scripts": [
+      "scripts/create-harness.mjs",
+      "scripts/validate-harness.mjs",
+      "scripts/render-assessment-html.mjs",
+      "scripts/run-benchmark.mjs",
+      "scripts/lib/harness-utils.mjs"
+    ],
     "assets": [],
     "templates": [
       "templates/agents.md",
       "templates/feature-list.json",
+      "templates/feature-list.schema.json",
       "templates/init.sh",
       "templates/progress.md",
       "templates/session-handoff.md"

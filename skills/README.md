@@ -21,10 +21,10 @@ This directory contains reusable AI agent skills for the Learn Harness Engineeri
 
 Production harness engineering skill for AI coding agents. Helps create, assess, and improve agent harness files (AGENTS.md, feature lists, verification workflows, session continuity mechanisms).
 
-- **5 reference patterns**: Memory Persistence, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap
-- **Templates**: AGENTS.md, feature-list.json, init.sh, progress.md
-- **5 built-in eval test cases**
-- **Bilingual**: English + 中文
+- **7 reference patterns**: Memory Persistence, Skill Runtime, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap, Gotchas
+- **Templates**: AGENTS.md/CLAUDE.md, feature-list.json, init.sh, progress.md, session-handoff.md
+- **Scripts**: scaffold, validate, render HTML assessment, run structural benchmark
+- **10 built-in eval test cases**
 
 See [harness-creator/README.md](harness-creator/README.md) for full documentation.
 
@@ -49,10 +49,12 @@ skills/
 ├── README-VI.md                 # Vietnamese version
 ├── README-DE.md                 # German version
 └── harness-creator/             # Harness engineering skill
-    ├── SKILL.md                 # Main skill definition (bilingual)
+    ├── SKILL.md                 # Main skill definition
     ├── SKILL.md.en              # English-only version
     ├── README.md                # Detailed documentation
     ├── metadata.json            # Skill metadata & triggers
+    ├── agents/                  # Skill UI metadata
+    ├── scripts/                 # Scaffold, validate, benchmark helpers
     ├── evals/                   # Test cases
     ├── templates/               # Scaffold templates
     └── references/              # Deep-dive pattern docs
@@ -75,7 +77,8 @@ All files in this directory have been audited for security:
 - No backdoors, hidden URLs, or encoded payloads
 - No data exfiltration or hardcoded credentials
 - No command injection vulnerabilities
-- `init.sh` runs only standard npm lifecycle commands
+- Scripts use only Node.js built-in modules
+- Generated `init.sh` runs detected project verification commands
 
 ## License
 

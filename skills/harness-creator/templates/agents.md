@@ -1,6 +1,6 @@
-# AGENTS.md
+# {{AGENT_FILE_NAME}}
 
-[One-sentence project purpose]
+{{PROJECT_PURPOSE}}
 
 ## Startup Workflow
 
@@ -8,7 +8,7 @@ Before writing code:
 
 1. **Confirm working directory** with `pwd`
 2. **Read this file** completely
-3. **Read [ARCHITECTURE.md / CLAUDE.md]** for system map and hard rules
+3. **Read project docs if present** (`docs/ARCHITECTURE.md`, `docs/PRODUCT.md`, README, or equivalent)
 4. **Run `./init.sh`** to verify environment is healthy
 5. **Read `feature_list.json`** to see current feature state
 6. **Review recent commits** with `git log --oneline -5`
@@ -53,16 +53,16 @@ Before ending a session:
 
 ```bash
 # Full verification (recommended)
-./init.sh
-
-# Individual checks
-npm install && npm run check && npm test
+{{PRIMARY_VERIFICATION_COMMAND}}
 ```
+
+Required checks:
+{{VERIFICATION_COMMANDS}}
 
 ## Escalation
 
 If you encounter:
-- **Architecture decisions**: Consult [ARCHITECTURE.md] or ask user
-- **Unclear requirements**: Check [docs/PRODUCT.md] or ask user
+- **Architecture decisions**: Consult project architecture docs if present, otherwise ask user
+- **Unclear requirements**: Check product/requirements docs if present, otherwise ask user
 - **Repeated test failures**: Update progress, flag for human review
 - **Scope ambiguity**: Re-read `feature_list.json` for definition of done

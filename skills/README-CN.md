@@ -21,10 +21,10 @@
 
 面向 AI 编程智能体的生产级 harness 工程技能。帮助创建、评估和改进 agent harness 文件（AGENTS.md、功能清单、验证工作流、会话连续性机制）。
 
-- **5 个参考模式**：记忆持久化、上下文工程、工具注册、多智能体协调、生命周期与引导
-- **模板**：AGENTS.md、feature-list.json、init.sh、progress.md
-- **5 个内置评估测试用例**
-- **双语支持**：English + 中文
+- **7 个参考模式**：记忆持久化、技能运行时、上下文工程、工具注册、多智能体协调、生命周期与引导、陷阱
+- **模板**：AGENTS.md/CLAUDE.md、feature-list.json、init.sh、progress.md、session-handoff.md
+- **脚本**：脚手架生成、校验、HTML 评估报告、结构化 benchmark
+- **10 个内置评估测试用例**
 
 详见 [harness-creator/README.md](harness-creator/README.md)。
 
@@ -49,10 +49,12 @@ skills/
 ├── README-VI.md                 # 越南文说明
 ├── README-DE.md                 # 德文说明
 └── harness-creator/             # Harness 工程技能
-    ├── SKILL.md                 # 主技能定义（双语）
+    ├── SKILL.md                 # 主技能定义
     ├── SKILL.md.en              # 英文版
     ├── README.md                # 详细文档
     ├── metadata.json            # 技能元数据与触发词
+    ├── agents/                  # 技能 UI 元数据
+    ├── scripts/                 # 脚手架、校验和 benchmark 辅助脚本
     ├── evals/                   # 测试用例
     ├── templates/               # 脚手架模板
     └── references/              # 深入的模式参考文档
@@ -75,7 +77,8 @@ skills/
 - 无后门、隐藏 URL 或编码载荷
 - 无数据泄露或硬编码凭证
 - 无命令注入漏洞
-- `init.sh` 仅运行标准 npm 生命周期命令
+- 脚本仅使用 Node.js 内置模块
+- 生成的 `init.sh` 运行检测到的项目验证命令
 
 ## 许可证
 
