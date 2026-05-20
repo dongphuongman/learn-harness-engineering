@@ -11,6 +11,17 @@ Füge dem Repository "Lesbarkeit" hinzu, damit ein neuer Agent die Projektstrukt
 
 Du führst es zweimal aus: zuerst ohne Hilfe, dann mit bereits abgelegten `ARCHITECTURE.md`, `PRODUCT.md` und `session-handoff.md`.
 
+## Nutze das eingecheckte Projekt
+
+Repository-Pfad: `projects/project-02/`
+
+| Verzeichnis | Inhalt | Vergleichspunkt |
+|------|------|------|
+| `starter/` | Code aus Project 01 mit noch unvollständigem Import, Detailansicht und Persistenz. Die Dokumentation ist vorhanden, aber dünner, und `session-handoff.md` fehlt. | Wie viel Kontext eine zweite Agent-Sitzung erneut herausfinden muss. |
+| `solution/` | Derselbe Produktschnitt ist fertig, mit Übergabedokumentation unter `projects/project-02/solution/` sowie `feature_list.json` und `session-handoff.md`. | Ob eine neue Sitzung nur aus dem Repository-Zustand weiterarbeiten kann. |
+
+Die Produktfunktionen sind Dokumentimport, vollständiges Laden von Details/Inhalt und Persistenz nach Neustart. Die Harness-Funktion ist ein gut übergebbarer Workspace.
+
 ## Werkzeuge
 
 - Claude Code oder Codex

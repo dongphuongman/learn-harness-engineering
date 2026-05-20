@@ -11,6 +11,17 @@
 
 同じ作業を 2 回実行します。1 回目はログや制約なし。2 回目は適切なツールとルールを使います。
 
+## リポジトリ内のプロジェクトを使う
+
+リポジトリ内のパス: `projects/project-04/`
+
+| ディレクトリ | 含まれるもの | 比較すること |
+|------|------|------|
+| `starter/` | Project 03 のコードで診断シグナルが弱い状態です。仕込まれた indexing 欠陥により大きなファイルの chunking が壊れる可能性があり、architecture check script もありません。 | runtime シグナルなしで根本原因にたどり着く時間。 |
+| `solution/` | structured logger、architecture boundary docs/script、修正済み chunking logic、`clean-state-checklist.md` があります。 | logs と boundary checks が修正を速く、影響範囲を小さくするか。 |
+
+確認するファイル: `projects/project-04/solution/src/services/logger.ts`, `projects/project-04/solution/scripts/check-architecture.sh`, `projects/project-04/solution/docs/ARCHITECTURE.md`, `projects/project-04/solution/src/services/indexing-service.ts`.
+
 ## ツール
 
 - Claude Code または Codex

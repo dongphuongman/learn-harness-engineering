@@ -17,17 +17,37 @@ cd starter
 npm install
 # Give the contents of task-prompt.md as the prompt to Claude Code / Codex
 # Ask the agent to complete: window startup, document list, QA panel, data directory
+# Do not give the agent solution files during this run.
 
 # 2. Run the same task with solution (explicit harness)
 cd ../solution
 npm install
-# Ask the agent to read AGENTS.md and follow the rules for the same task
+# Ask the agent to read AGENTS.md, init.sh, feature_list.json, and claude-progress.md
+# before touching code. The product code should already satisfy the same four features.
 
 # 3. Compare the two results
 # - Was the task completed?
 # - How many retries were needed?
 # - Did the agent claim "done" too early?
 ```
+
+## Exact Task Contract
+
+The starter prompt is intentionally vague (`starter/task-prompt.md` contains only
+"Build an Electron app that can show documents and answer questions."). Use the
+solution harness to make that vague request concrete:
+
+| Feature | Starter evidence to inspect | Solution evidence to compare |
+|------|------|------|
+| Window launch | `src/main/main.ts`, `src/preload/preload.ts` | `feature_list.json` item `window-launch` |
+| Document list panel | `src/renderer/components/DocumentList.tsx` | `feature_list.json` item `document-list` |
+| Question panel | `src/renderer/components/QuestionPanel.tsx` | `feature_list.json` item `question-panel` |
+| Data directory | `src/services/persistence-service.ts` | `feature_list.json` item `data-directory` |
+
+This project is an experiment, not a normal "fill in the starter until it equals
+solution" assignment. The learning outcome is the measured difference between a
+prompt-only run and a run that starts from explicit repo rules and verification
+artifacts.
 
 ## Features Covered
 

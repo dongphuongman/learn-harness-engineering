@@ -9,7 +9,18 @@
 
 你需要跑兩次。第一次只給一段提示詞，什麼都不準備，看 agent 能做到什麼程度。第二次提前在倉庫裡放好 `AGENTS.md`、`init.sh`、`feature_list.json`，用結構化的方式告訴 agent 該幹什麼、怎麼驗證、什麼時候算做完。然後對比兩次結果。
 
-這個項目的核心不是寫代碼，是搞清楚"提前花 15 分鐘準備規則"和"上來就讓 agent 幹"之間到底差多少。
+課程場景使用一小段準備或重新探索時間作為示例，不依賴固定測量值。
+
+## 使用倉庫內建專案
+
+倉庫路徑：`projects/project-01/`
+
+| 目錄 | 內容 | 怎麼用 / 比較什麼 |
+|------|------|------|
+| `starter/` | 弱 harness 版本。只有 `task-prompt.md` 作為任務描述，沒有 `AGENTS.md` 或 `feature_list.json`。 | 把 prompt 交給 coding agent，量測它在沒有額外結構時完成了什麼。 |
+| `solution/` | 相同的產品切片，但加入明確的 harness 產物：`AGENTS.md`、`CLAUDE.md`、`init.sh`、`feature_list.json`、`claude-progress.md`。 | 對照規則與驗證證據如何把同一任務變得可執行、可驗收。 |
+
+四個具體功能是：視窗啟動、文件清單、問答面板、本地資料目錄建立。每個功能的預期證據請看 `solution/feature_list.json`。
 
 ## 用什麼工具
 

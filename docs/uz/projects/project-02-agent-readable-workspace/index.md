@@ -11,6 +11,15 @@ Yangi agent loyiha tuzilishini tez tushunib olishi, joriy jarayon (progress) qay
 
 Siz buni ikki marta bajarasiz: birinchisi hech qanday yordamsiz, ikkinchisi repoda oldindan joylashtirilgan `ARCHITECTURE.md`, `PRODUCT.md` va `session-handoff.md` fayllari bilan.
 
+## Repodagi tayyor loyihadan foydalaning
+
+Repo yoʻli: `projects/project-02/`
+
+| Katalog | Nimalar bor | Nimani taqqoslash |
+|------|------|------|
+| `starter/` | Project 01 kodi, lekin hujjat importi, detail view va persistence hali toʻliq emas. Hujjatlar bor, ammo qisqaroq; `session-handoff.md` yoʻq. | Ikkinchi agent sessiyasi qancha kontekstni qayta topishi kerak. |
+| `solution/` | Xuddi shu mahsulot kesimi tugallangan; handoff hujjatlari `projects/project-02/solution/` ostida, shuningdek `feature_list.json` va `session-handoff.md` bor. | Yangi sessiya faqat repo holatidan davom eta oladimi. |
+
 ## Vositalar
 
 - Claude Code yoki Codex

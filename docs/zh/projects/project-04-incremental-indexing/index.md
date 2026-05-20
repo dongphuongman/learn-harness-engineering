@@ -9,7 +9,18 @@
 
 你要做两件事。第一，给知识库应用加上运行时可观测性：启动日志、导入和索引的日志、问答失败时的用户可见错误状态。第二，在仓库里编码架构约束，让 agent 不可能静默地跨层违规（main / preload / renderer / services 之间的边界）。
 
-然后你会在代码里埋一个运行时 bug，让 agent 去修。跑两次：一次不给日志和约束，看 agent 怎么修；一次给好日志和架构规则，看差别。
+仓库里的 starter 已经埋好了运行时 bug，但诊断信号很弱，也没有架构检查脚本。solution 加上结构化日志、架构规则和修复后的分块逻辑。比较两者，看运行时反馈对修复质量的影响。
+
+## 使用仓库里的项目
+
+仓库路径：`projects/project-04/`
+
+| 目录 | 里面有什么 | 比较什么 |
+|------|------|------|
+| `starter/` | Project 03 代码，诊断信号较弱。植入的 indexing 缺陷会让大文件分块异常，并且没有架构检查脚本。 | 没有运行时信号时，agent 多久能找到根因。 |
+| `solution/` | 结构化 logger、架构边界文档和脚本、修复后的分块逻辑、`clean-state-checklist.md`。 | 日志和边界检查是否让修复更快、更少破坏。 |
+
+重点检查 `projects/project-04/solution/src/services/logger.ts`、`projects/project-04/solution/scripts/check-architecture.sh`、`projects/project-04/solution/docs/ARCHITECTURE.md`、`projects/project-04/solution/src/services/indexing-service.ts`。
 
 ## 用什么工具
 
@@ -33,7 +44,7 @@
 切到 `p04-baseline` 分支。
 
 1. 启动 agent，告诉它"问答功能返回空结果，请修复"。
-2. 仓库里没有运行时日志，没有架构约束文件。
+2. 仓库里没有结构化 logger，也没有架构检查脚本。
 3. 记录 agent 花了多久找到根因、怎么确认修复的、修复过程中是否引入了新的层边界违规。
 4. 修复后重启应用，确认是否能干净启动。
 
@@ -41,8 +52,8 @@
 
 切到 `p04-improved` 分支。在启动 agent 之前，先在仓库里准备好：
 
-- **运行时日志**：启动时打印初始化步骤，导入时打印文件数量和 chunk 结果，索引时打印进度，问答失败时打印错误原因。
-- **架构约束**：在 `AGENTS.md` 里明确写 Electron 四层边界（main / preload / renderer / services），说明哪些调用路径是允许的。用 ESLint 规则或 guard 脚本检查违规。
+- **运行时日志**：对照 solution 的 `src/services/logger.ts`，启动、导入、索引、问答失败路径都有结构化日志。
+- **架构约束**：对照 solution 的 `AGENTS.md`、`projects/project-04/solution/docs/ARCHITECTURE.md` 和 `projects/project-04/solution/scripts/check-architecture.sh`，明确 Electron 四层边界（main / preload / renderer / services）。
 - **干净状态要求**：最终交付前必须能干净重启。
 
 然后启动 agent：

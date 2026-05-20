@@ -9,7 +9,18 @@
 
 你需要跑两次。第一次只给一段提示词，什么都不准备，看 agent 能做到什么程度。第二次提前在仓库里放好 `AGENTS.md`、`init.sh`、`feature_list.json`，用结构化的方式告诉 agent 该干什么、怎么验证、什么时候算做完。然后对比两次结果。
 
-这个项目的核心不是写代码，是搞清楚"提前花 15 分钟准备规则"和"上来就让 agent 干"之间到底差多少。
+课程场景使用一小段准备或重新探索时间作为示例，不依赖固定测量值。
+
+## 使用仓库里的项目
+
+仓库路径：`projects/project-01/`
+
+| 目录 | 里面有什么 | 怎么用 |
+|------|------|------|
+| `starter/` | 弱 harness 版本，只有 `task-prompt.md`，没有 `AGENTS.md` 或 `feature_list.json`。 | 把 prompt 给 coding agent，测量它在没有额外结构时完成了什么。 |
+| `solution/` | 同一个产品切片，加上 `AGENTS.md`、`CLAUDE.md`、`init.sh`、`feature_list.json`、`claude-progress.md`。 | 对照规则和验证证据如何把同一任务具体化。 |
+
+四个具体功能是窗口启动、文档列表、问答面板、本地数据目录。预期证据见 `solution/feature_list.json`。
 
 ## 用什么工具
 

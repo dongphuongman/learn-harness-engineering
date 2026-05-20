@@ -11,7 +11,18 @@ Minimal bir Electron bilgi tabanı uygulama iskeleti inşa edin — solda doküm
 
 İki kez çalıştırın. İlk seferinde: yalnızca bir prompt, hiçbir hazırlık yok. İkinci seferinde: `AGENTS.md`, `init.sh`, `feature_list.json` önceden depoya yerleştirilmiş. Sonra karşılaştırın.
 
-Bu projenin özü kod yazmak değil — "önce 15 dakika kuralları hazırlamak" ile "ajanı serbest bırakmak" arasındaki farkın ne kadar büyük olduğunu görmek.
+Kurs senaryosu kısa bir hazırlık veya yeniden keşif süresini örnek olarak kullanır; sabit ölçüm değerlerine bağlı değildir.
+
+## Depodaki projeyi kullanın
+
+Depo yolu: `projects/project-01/`
+
+| Dizin | İçerik | Nasıl kullanılır |
+|------|------|------|
+| `starter/` | Zayıf harness sürümü; yalnızca `task-prompt.md` vardır, `AGENTS.md` veya `feature_list.json` yoktur. | Prompt'u coding agent'a verin ve ek yapı olmadan neleri tamamladığını ölçün. |
+| `solution/` | Aynı ürün dilimi; ayrıca `AGENTS.md`, `CLAUDE.md`, `init.sh`, `feature_list.json`, `claude-progress.md` içerir. | Kuralların ve doğrulama kanıtlarının aynı görevi nasıl somutlaştırdığını karşılaştırın. |
+
+Dört somut özellik: pencerenin açılması, doküman listesi, Soru-Cevap paneli ve yerel veri dizini. Beklenen kanıt `solution/feature_list.json` içindedir.
 
 ## Araçlar
 

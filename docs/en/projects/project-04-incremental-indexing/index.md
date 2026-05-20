@@ -9,7 +9,9 @@
 
 Add runtime observability (startup logs, import/indexing logs, error states) and architecture constraints to prevent cross-layer violations. Plant a runtime bug for the agent to fix.
 
-You run it twice: first without logs or constraints, second with proper tools and rules.
+You compare the checked-in starter and solution: the starter has weak diagnostics
+and no architecture guard script, while the solution adds structured logs,
+boundary checks, and the bug fix.
 
 ## Tools
 
@@ -20,3 +22,17 @@ You run it twice: first without logs or constraints, second with proper tools an
 ## Harness Mechanism
 
 Runtime feedback + scope control + incremental indexing
+
+## Use the Checked-In Project
+
+Repository path: `projects/project-04/`
+
+| Directory | What it contains | What to compare |
+|------|------|------|
+| `starter/` | Project 03 code with weak diagnostics. A seeded indexing defect can make large-file chunking fail, and there is no architecture-check script. | How long the agent takes to find the root cause without runtime signals. |
+| `solution/` | Structured logger, architecture boundary docs and script, fixed chunking logic, and `clean-state-checklist.md`. | Whether logs and boundary checks make the fix faster and less invasive. |
+
+The concrete files to inspect are `projects/project-04/solution/src/services/logger.ts`,
+`projects/project-04/solution/scripts/check-architecture.sh`,
+`projects/project-04/solution/docs/ARCHITECTURE.md`, and
+`projects/project-04/solution/src/services/indexing-service.ts`.

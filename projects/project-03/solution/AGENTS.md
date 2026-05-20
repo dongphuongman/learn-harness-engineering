@@ -1,4 +1,4 @@
-# AGENTS.md -- Project 03: Scope Control and Grounded Verification
+# AGENTS.md -- Project 03: Multi-Session Continuity with Scope Control
 
 ## Startup Rules
 

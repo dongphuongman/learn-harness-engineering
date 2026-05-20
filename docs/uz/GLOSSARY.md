@@ -70,11 +70,11 @@ Ushbu hujjat barcha tarjimalarda atamalar bir xil qoʻllanishini taʼminlaydi. Y
 - **Tafsif:** Modelda imkoniyat bor, lekin muhitda nuqson tufayli yiqilish.
 - **Qoʻllash:** Toʻliq atama saqlanadi. Tarjimaga "harness sabab" deb yozmang — "harness keltirib chiqargan" toʻgʻri.
 
-### Context Anxiety
-- **EN:** Context anxiety
-- **UZ:** Kontekst xavotiri (context anxiety)
-- **Tafsif:** Agent kontekst tugayotganini sezsa shoshilib oddiy yechimni tanlaydigan hodisa.
-- **Qoʻllash:** Birinchi marta toʻliq, keyin `kontekst xavotiri`.
+### Context Pressure
+- **EN:** Context pressure
+- **UZ:** Kontekst bosimi (context pressure)
+- **Tafsif:** Kontekst haddan tashqari gavjumlashganda agent ishni erta yakunlashga, tekshiruvni qisqartirishga yoki soddaroq yoʻlni tanlashga moyil boʻladigan kurs atamasi.
+- **Qoʻllash:** Birinchi marta toʻliq, keyin `kontekst bosimi`.
 
 ### Five Failure Layers (Beshta muvaffaqiyatsizlik qatlami)
 

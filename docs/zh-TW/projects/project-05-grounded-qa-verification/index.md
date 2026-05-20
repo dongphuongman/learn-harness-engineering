@@ -11,12 +11,23 @@
 
 選一個實質性的功能升級（比如多輪對話歷史、引用面板重設計、文檔集合與篩選），三次都做同一個升級，唯一變量是 harness 的角色分工。
 
+## 使用倉庫內建專案
+
+倉庫路徑：`projects/project-05/`
+
+| 目錄 | 內容 | 比較什麼 |
+|------|------|------|
+| `starter/` | 基於 Project 04 的應用，尚未做 ConversationHistory（多輪對話歷史）升級。 | 若你要自己重跑三種變體，從這裡開始。 |
+| `solution/single-role/` | 單角色：同一個 agent 規劃/實作/自查。 | `evaluator-rubric.md` 低分與缺陷清單。 |
+| `solution/gen-eval/` | 生成者 + 評估者：有修訂與回饋證據。 | `evaluator-rubric.md` 分數與 revision 記錄。 |
+| `solution/plan-gen-eval/` | 規劃者 + 生成者 + 評估者：有 sprint contract。 | `sprint-contract.md` 與 `evaluator-rubric.md` 高分證據。 |
+
 ## 用什麼工具
 
 - Claude Code 或 Codex（用於生成和規劃角色）
 - 同一個或另一個 agent 實例（用於評估角色）
 - 評估量表（參考 `docs/zh-TW/resources/templates/evaluator-rubric.md`）
-- Sprint contract 範本（參考 `docs/lectures/lecture-11-why-observability-belongs-inside-the-harness/code/sprint-contract.md`）
+- Sprint contract 範本（參考 `docs/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/code/sprint-contract.md`）
 
 ## 具體步驟
 

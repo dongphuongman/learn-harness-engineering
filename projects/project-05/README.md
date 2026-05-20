@@ -14,7 +14,12 @@ Measure how role separation (single role, generator plus evaluator, planner plus
 ## How to Use
 
 ```sh
-# Run each of the three variants independently
+# Start from starter if you want to run the exercise yourself.
+cd starter
+npm install
+# Implement the same ConversationHistory upgrade three times using the role setup below.
+
+# Inspect the three reference variants independently
 cd solution/single-role && npm install  # single-role mode
 cd solution/gen-eval && npm install     # generator plus evaluator mode
 cd solution/plan-gen-eval && npm install # full three-role mode
@@ -24,6 +29,24 @@ cd solution/plan-gen-eval && npm install # full three-role mode
 # - Number of defects found
 # - Amount of rework required
 ```
+
+## Exact Task Contract
+
+The product upgrade for the checked-in solutions is fixed: implement multi-turn
+Q&A history through `ConversationHistory`. The three solution directories are
+not sequential stages; they are three independent runs of the same feature with
+different harness roles.
+
+| Variant | What it demonstrates | Evidence to inspect |
+|------|------|------|
+| `starter/` | P4-based app before the conversation-history upgrade | `src/renderer/components/ConversationHistory.tsx`, `App.tsx` |
+| `solution/single-role/` | One agent plans, implements, and self-reviews | `evaluator-rubric.md` score 1.6/5 and listed defects |
+| `solution/gen-eval/` | Separate generator and evaluator with revision evidence | `evaluator-rubric.md` score 3.3/5 and revision notes |
+| `solution/plan-gen-eval/` | Planner + generator + evaluator with a sprint contract | `sprint-contract.md`, `evaluator-rubric.md` score 4.9/5 |
+
+Keep the feature constant when you rerun the project. Changing the feature
+between variants invalidates the comparison because role separation is the only
+intended variable.
 
 ## Features Covered
 

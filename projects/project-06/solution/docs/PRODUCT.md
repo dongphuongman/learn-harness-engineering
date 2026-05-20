@@ -80,7 +80,7 @@ A desktop application for managing a personal knowledge base. Users import text 
 |   3.2 KB         | Q&A Response:                          |
 | doc2 (Imported)  |   Answer text...                       |
 |   1.8 KB         |   Citations: [expandable]              |
-|                  |   Confidence: 85%                      |
+|                  |   Confidence: high                     |
 |                  |   [+1] [-1] feedback                   |
 +------------------+----------------------------------------+
 | Ask a question...                              [Ask]       |

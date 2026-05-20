@@ -9,11 +9,11 @@ next session can continue without guessing.
 Before writing code:
 
 1. Confirm the working directory with `pwd`.
-2. Read `claude-progress.md` for the latest verified state and next step.
-3. Read `feature_list.json` and choose the highest-priority unfinished feature.
-4. Review recent commits with `git log --oneline -5`.
-5. Run `./init.sh`.
-6. Run the required smoke or end-to-end verification before starting new work.
+2. Read `docs/ARCHITECTURE.md` for the Electron layer boundaries.
+3. Review recent commits with `git log --oneline -5`.
+4. Run `npm install` if dependencies are missing.
+5. Run `npm run check`.
+6. Run `bash scripts/check-architecture.sh`.
 
 If baseline verification is already failing, fix that first. Do not stack new
 feature work on top of a broken starting state.
@@ -51,11 +51,17 @@ Run `bash scripts/check-architecture.sh` before committing.
 
 ## Required Artifacts
 
-- `feature_list.json`: source of truth for feature state
-- `claude-progress.md`: session log and current verified status
-- `init.sh`: standard startup and verification path
-- `session-handoff.md`: optional compact handoff for larger sessions
+Project 04 intentionally keeps a smaller harness than the capstone projects.
+The required artifacts in this solution are:
+
+- `AGENTS.md`: operating rules for this project
+- `docs/ARCHITECTURE.md`: layer boundaries and data flow
+- `scripts/check-architecture.sh`: boundary guard
 - `clean-state-checklist.md`: pre-commit repository health check
+
+Do not assume `feature_list.json`, `claude-progress.md`, `init.sh`, or
+`session-handoff.md` exist in this project. Those artifacts are introduced in
+other project stages.
 
 ## Definition Of Done
 
@@ -63,7 +69,8 @@ A feature is done only when all of the following are true:
 
 - the target behavior is implemented
 - the required verification actually ran
-- evidence is recorded in `feature_list.json` or `claude-progress.md`
+- evidence is recorded in the final summary or a project document touched by
+  the task
 - the repository remains restartable from the standard startup path
 - `scripts/check-architecture.sh` passes with no violations
 
@@ -71,10 +78,8 @@ A feature is done only when all of the following are true:
 
 Before ending a session:
 
-1. Update `claude-progress.md`.
-2. Update `feature_list.json`.
-3. Record any unresolved risk or blocker.
-4. Run `bash scripts/check-architecture.sh`.
-5. Commit with a descriptive message once the work is in a safe state.
-6. Leave the repo clean enough for the next session to run `./init.sh`
-   immediately.
+1. Record any unresolved risk or blocker in your final summary.
+2. Run `npm run check`.
+3. Run `bash scripts/check-architecture.sh`.
+4. Commit with a descriptive message once the work is in a safe state.
+5. Leave the repo clean enough for the next session to run the startup workflow.

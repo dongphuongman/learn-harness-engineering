@@ -11,7 +11,7 @@ Build a minimal Electron knowledge-base app shell — a window with a document l
 
 You run it twice. First time: just a prompt, no preparation. Second time: `AGENTS.md`, `init.sh`, `feature_list.json` pre-placed in the repo. Then compare.
 
-The core of this project is not writing code — it's figuring out how big the gap is between "spend 15 minutes preparing rules first" and "just let the agent go."
+This course scenario uses a short rediscovery/preparation interval as an example, not a fixed measured result.
 
 ## Tools
 
@@ -23,3 +23,16 @@ The core of this project is not writing code — it's figuring out how big the g
 ## Harness Mechanism
 
 Minimal harness: `AGENTS.md` + `init.sh` + `feature_list.json`
+
+## Use the Checked-In Project
+
+Repository path: `projects/project-01/`
+
+| Directory | What it contains | How to use it |
+|------|------|------|
+| `starter/` | The weak-harness run. It has only `task-prompt.md` as the task description and no `AGENTS.md` or `feature_list.json`. | Give the prompt to your coding agent and measure what it completes without extra structure. |
+| `solution/` | The same product slice with explicit harness artifacts: `AGENTS.md`, `CLAUDE.md`, `init.sh`, `feature_list.json`, and `claude-progress.md`. | Compare how the same task is made concrete through rules and verification evidence. |
+
+The four concrete features are window launch, document list, question panel, and
+local data directory creation. Inspect `solution/feature_list.json` for the
+expected evidence for each feature.

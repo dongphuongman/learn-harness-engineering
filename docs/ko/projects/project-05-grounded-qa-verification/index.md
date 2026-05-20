@@ -13,6 +13,17 @@
 
 실질적인 기능 업그레이드(멀티턴 대화, 인용 패널 재설계, 또는 문서 필터링)를 선택하고 모든 실행에서 동일하게 유지합니다.
 
+## 저장소에 포함된 프로젝트 사용하기
+
+저장소 경로: `projects/project-05/`
+
+| 디렉터리 | 내용 | 비교할 것 |
+|------|------|------|
+| `starter/` | Project 04 기반 앱이며 대화 기록 업그레이드 전 상태입니다. | 세 변형을 다시 실행할 때의 시작점. |
+| `solution/single-role/` | 한 에이전트가 계획, 구현, 자기 평가를 모두 수행합니다. | `evaluator-rubric.md`의 점수와 결함. |
+| `solution/gen-eval/` | generator + evaluator 구조이며 수정 증거가 있습니다. | `evaluator-rubric.md`의 점수와 revision notes. |
+| `solution/plan-gen-eval/` | planner + generator + evaluator와 sprint contract가 있습니다. | `sprint-contract.md`와 `evaluator-rubric.md`의 높은 평가 증거. |
+
 ## 도구
 
 - Claude Code 또는 Codex

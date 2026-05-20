@@ -11,6 +11,15 @@
 
 ドキュメントインポート、インデックス、引用付き Q&A、ランタイム観測性、読みやすく再開可能なリポジトリ状態を含む、固定された複数機能タスクセットを使います。まず弱い harness のベースラインで実行し、次に最も強い harness で実行し、その後クリーンアップして再実行します。最後に harness の ablation 実験を行い、コンポーネントを 1 つずつ外して、どれが本当に重要かを確認します。
 
+## リポジトリ内のプロジェクトを使う
+
+リポジトリ内のパス: `projects/project-06/`
+
+| ディレクトリ | 含まれるもの | 比較すること |
+|------|------|------|
+| `starter/` | プロダクトはほぼ完成していますが、harness は意図的に弱められています。基本的な `AGENTS.md` のみで、`feature_list.json`、`session-handoff.md`、clean-state checklist、benchmark/cleanup scripts はありません。 | 弱い harness baseline の手動観察。 |
+| `solution/` | 完全な harness: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, quality/evaluator docs, scripts。 | `projects/project-06/solution/scripts/benchmark.sh` と `projects/project-06/solution/scripts/cleanup-scanner.sh` を実行し、quality evidence を比較します。 |
+
 ## ツール
 
 - Claude Code または Codex

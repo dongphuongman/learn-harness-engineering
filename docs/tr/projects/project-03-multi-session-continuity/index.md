@@ -7,9 +7,20 @@
 
 ## Ne Yapacaksınız
 
-Ajana kapsam kontrolü ve doğrulama eşikleri ekleyin. Doküman parçalama, üst veri çıkarımı, dizinleme ilerleme göstergesi ve alıntı tabanlı Soru-Cevap akışını uygulayın. Özellik durumunu izlemek için `feature_list.json` kullanın — aynı anda tek özellik, doğrulama kanıtı olmadan "geçti" işaretlemesi yok.
+Ajana kapsam kontrolü ve doğrulama eşikleri ekleyin. Doküman parçalama, üst veri çıkarımı, dizinleme ilerleme göstergesi ve alıntı tabanlı Soru-Cevap akışını uygulayın.
+
+Bir `feature_list.json` gerekir; her özelliğin açık bir durumu olmalıdır. Kural basittir: aynı anda tek özellik, çalışır doğrulama kanıtı olmadan `passing` işaretlemesi yok. Depodaki starter erken bir özellik listesi içerir ama tam yeniden başlatma ve devir artefaktları eksiktir; solution bu artefaktları tamamlar. İkisini karşılaştırın.
 
 İki kez çalıştırın: ilk seferinde kısıt olmadan, ikinci seferinde katı uygulamayla.
+
+## Depodaki projeyi kullanın
+
+Depo yolu: `projects/project-03/`
+
+| Dizin | İçerik | Nasıl kullanılır |
+|------|------|------|
+| `starter/` | Project 02 kodu; indeksleme ve alıntılı Soru-Cevap tamamlanmamıştır. Starter sürümü `feature_list.json` içerir ama son yeniden başlatma/devir artefaktları eksiktir. | Agent'ın birden çok özellik arasında kayıp kaymadığını ve yeniden başlatmadan sonra durumu kaybedip kaybetmediğini ölçün. |
+| `solution/` | Doküman parçalama, üst veri, indeksleme durumu ve alıntılı Soru-Cevap tamamlanmıştır; ayrıca `init.sh`, `session-handoff.md`, `claude-progress.md`, `clean-state-checklist.md` eklenmiştir. | Her özelliğin ancak doğrulama kanıtı varsa `passing` olup olmadığını kontrol edin. |
 
 ## Araçlar
 

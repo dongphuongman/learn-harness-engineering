@@ -11,6 +11,15 @@ Füge dem Agenten Scope-Kontrolle und Verifikationsgates hinzu. Implementiere Do
 
 Du führst es zweimal aus: zuerst ohne Einschränkungen, dann mit strikter Durchsetzung.
 
+## Nutze das eingecheckte Projekt
+
+Repository-Pfad: `projects/project-03/`
+
+| Verzeichnis | Inhalt | Vergleichspunkt |
+|------|------|------|
+| `starter/` | Project-02-Code, bei dem Indexierung und zitierfähiges Q&A noch unvollständig sind. Es gibt ein erstes `feature_list.json`, aber keine finalen Neustart- und Übergabeartefakte. | Ob der Agent über mehrere Funktionen driftet oder nach einem Neustart Zustand verliert. |
+| `solution/` | Chunking, Metadaten, Indexierungsstatus und Q&A mit Zitaten sind fertig, plus `init.sh`, `session-handoff.md`, `claude-progress.md` und `clean-state-checklist.md`. | Ob jede Funktion konkrete Evidenz hat, bevor sie als bestanden markiert wird. |
+
 ## Werkzeuge
 
 - Claude Code oder Codex

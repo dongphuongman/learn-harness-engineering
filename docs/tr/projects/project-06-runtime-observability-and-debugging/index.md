@@ -11,6 +11,17 @@ Bu, bitirme projesidir. İlk beş projede öğrendiğiniz her şeyi bir araya ge
 
 Tüm ürün dilimini kapsayan sabit, çok özellikli bir görev seti kullanın: doküman içe aktarma, dizinleme, alıntı tabanlı Soru-Cevap, runtime gözlemlenebilirliği ve okunabilir, yeniden başlatılabilir depo durumu. Önce zayıf harness temeli ile, sonra en güçlü harness'ınızla, ardından bir temizleme ve yeniden çalıştırma. Son olarak bir harness ablation deneyi yapın — bileşenleri tek tek çıkarın ve hangilerinin gerçekten önemli olduğunu görün.
 
+## Depodaki projeyi kullanın
+
+Depo yolu: `projects/project-06/`
+
+| Dizin | İçerik | Nasıl kullanılır |
+|------|------|------|
+| `starter/` | Ürün kodunun çoğu tamamlanmıştır; fakat harness yüzeyi zayıftır: yalnızca temel `AGENTS.md` vardır, `feature_list.json`, `session-handoff.md` ve clean-state checklist yoktur. | Zayıf harness temelini elle kaydedin. Starter kasıtlı olarak benchmark betiği içermez. |
+| `solution/` | Tam harness: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, kalite/değerlendirme dokümanları, benchmark ve cleanup betikleri. | `projects/project-06/solution/scripts/benchmark.sh` ve `projects/project-06/solution/scripts/cleanup-scanner.sh` çalıştırın; kalite dokümanı kanıtlarını karşılaştırın. |
+
+Önceki projelerden farklı olarak capstone starter çok sayıda ürün özelliğinden yoksun değildir; ana eksik uygulamanın etrafındaki operasyonel harness'tır.
+
 ## Araçlar
 
 - Claude Code veya Codex

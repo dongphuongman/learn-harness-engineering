@@ -11,7 +11,7 @@ Minimal Electron bilimlar bazasi (knowledge-base) ilovasi (app) qobigʻini qurin
 
 Buni ikki marta ishga tushirasiz. Birinchi marta: hech qanday tayyorgarliksiz, faqat prompt bilan. Ikkinchi marta: repoda oldindan joylashtirilgan `AGENTS.md`, `init.sh`, `feature_list.json` bilan. Va keyin taqqoslaysiz.
 
-Bu loyihaning asosiy maqsadi kod yozish emas — “avval qoidalarni tayyorlash uchun 15 daqiqa sarflash” bilan “shunchaki agentga qoʻyib berish” oʻrtasidagi tafovut qanchalik katta ekanligini anglab yetishdir.
+Bu kurs ssenariysi qatʼiy oʻlchangan natijaga emas, balki qisqa qayta kashf qilish/tayyorgarlik oraligʻini misol sifatida oladi.
 
 ## Vositalar
 
@@ -23,3 +23,14 @@ Bu loyihaning asosiy maqsadi kod yozish emas — “avval qoidalarni tayyorlash 
 ## Harness mexanizmi
 
 Minimal harness: `AGENTS.md` + `init.sh` + `feature_list.json`
+
+## Repoga kiritilgan loyihadan foydalaning
+
+Repo yo‘li: `projects/project-01/`
+
+| Katalog | Nimalar bor | Qanday ishlatish / nimani taqqoslash |
+|------|------|------|
+| `starter/` | Zaif harness yugurishi. Vazifa tavsifi sifatida faqat `task-prompt.md` bor, `AGENTS.md` yoki `feature_list.json` yo‘q. | Promptni agentga bering va qo‘shimcha tuzilmasiz nimalarni tugatishini o‘lchang. |
+| `solution/` | Xuddi shu mahsulot kesimi, lekin aniq harness artefaktlari bilan: `AGENTS.md`, `CLAUDE.md`, `init.sh`, `feature_list.json`, `claude-progress.md`. | Qoidalar va tekshiruv bir xil vazifani qanday aniq va tekshiriladigan qiladi — taqqoslang. |
+
+4 ta aniq feature: oynani ishga tushirish, hujjatlar ro‘yxati, savol paneli va lokal ma’lumotlar katalogini yaratish. Har bir feature uchun kutiladigan evidence `solution/feature_list.json`da.

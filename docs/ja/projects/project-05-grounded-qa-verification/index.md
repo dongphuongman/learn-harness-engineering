@@ -11,6 +11,17 @@
 
 複数ターン会話、引用パネルの再設計、ドキュメントフィルタリングなど、実質的な機能改善を 1 つ選び、すべての実行で同じ対象を使います。
 
+## リポジトリ内のプロジェクトを使う
+
+リポジトリ内のパス: `projects/project-05/`
+
+| ディレクトリ | 含まれるもの | 比較すること |
+|------|------|------|
+| `starter/` | Project 04 ベースのアプリで、会話履歴アップグレード前の状態です。 | 3 つの変種を自分で再実行する出発点。 |
+| `solution/single-role/` | 1 つのエージェントが計画・実装・自己評価を行います。 | `evaluator-rubric.md` のスコアと欠陥。 |
+| `solution/gen-eval/` | generator + evaluator で修正証拠があります。 | `evaluator-rubric.md` のスコアと revision notes。 |
+| `solution/plan-gen-eval/` | planner + generator + evaluator と sprint contract があります。 | `sprint-contract.md` と `evaluator-rubric.md` の高い評価証拠。 |
+
 ## ツール
 
 - Claude Code または Codex

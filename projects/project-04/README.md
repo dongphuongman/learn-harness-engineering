@@ -1,4 +1,4 @@
-# Project 04: Runtime Observability and Structural Control
+# Project 04: Runtime Feedback and Structural Control
 
 Introduce runtime observability and structural boundary checks while debugging a seeded runtime defect.
 
@@ -6,7 +6,7 @@ Introduce runtime observability and structural boundary checks while debugging a
 
 | Directory | Meaning |
 |------|------|
-| `starter/` | **Starting point**: based on the P3 solution, with logging and structural boundary features still to implement. `IndexingService` contains a hidden seeded bug: files longer than 1000 characters produce empty chunks. There is no architecture-check script. |
+| `starter/` | **Starting point**: based on the P3 solution, with logging and structural boundary features still to implement. `IndexingService` contains a hidden seeded bug: files longer than 1000 characters can produce empty chunks. There is no architecture-check script and no final clean-state checklist. |
 | `solution/` | **Reference implementation**: structured logging module, architecture boundary-check script, and the seeded bug fixed. |
 
 ## How to Use
@@ -21,6 +21,24 @@ cd ../solution
 npm install
 # Compare how structured logs speed up diagnosis
 ```
+
+## Exact Task Contract
+
+Project 04 is a debugging and guardrail exercise. The starter already contains
+the Project 03 product slice, but the runtime is harder to inspect and the seeded
+chunking defect should be fixed only after the agent can see enough evidence.
+
+| Feature / artifact | Starter state | Solution evidence |
+|------|------|------|
+| Structured logging | No shared logger service | `src/services/logger.ts`, logging calls in `main.ts`, `ipc-handlers.ts`, and services |
+| Import / indexing diagnostics | Failures are hard to trace from runtime output | Log entries around import, indexing start/completion, and QA failure paths |
+| Architecture boundaries | No script checks renderer/main/service boundary drift | `scripts/check-architecture.sh`, `docs/ARCHITECTURE.md`, AGENTS boundary rules |
+| Seeded chunking bug | Large files can produce invalid/empty chunk output | Fixed `src/services/indexing-service.ts` paragraph/chunk logic |
+| Clean handoff | Starter has no final checklist | `clean-state-checklist.md` |
+
+Use a long sample document to reproduce the bug before and after the fix. A
+successful solution should show both code changes and diagnostic evidence, not
+only a passing claim.
 
 ## Features Covered
 

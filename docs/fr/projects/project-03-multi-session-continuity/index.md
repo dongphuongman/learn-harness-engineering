@@ -11,6 +11,15 @@ Ajoutez un contrôle de scope et des portes de vérification à l'agent. Implém
 
 Vous l'exécutez deux fois : d'abord sans contraintes, puis avec application stricte.
 
+## Utiliser le projet fourni
+
+Chemin dans le dépôt : `projects/project-03/`
+
+| Dossier | Contenu | À comparer |
+|------|------|------|
+| `starter/` | Code de Project 02 avec indexation et Q&A avec citations encore incomplets. Il contient un premier `feature_list.json`, mais pas les artefacts finaux de reprise. | Si l'agent dérive entre plusieurs fonctions ou perd l'état après redémarrage. |
+| `solution/` | Chunking, métadonnées, état d'indexation et Q&A avec citations terminés, plus `init.sh`, `session-handoff.md`, `claude-progress.md`, `clean-state-checklist.md`. | Si chaque fonction a une preuve concrète avant d'être marquée comme réussie. |
+
 ## Outils
 
 - Claude Code ou Codex

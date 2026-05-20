@@ -11,6 +11,15 @@ Ajoutez de la "lisibilité" au dépôt pour qu'un nouvel agent comprenne rapidem
 
 Vous l'exécutez deux fois : d'abord sans aide, puis avec `ARCHITECTURE.md`, `PRODUCT.md` et `session-handoff.md` déjà placés dans le dépôt.
 
+## Utiliser le projet fourni
+
+Chemin dans le dépôt : `projects/project-02/`
+
+| Dossier | Contenu | À comparer |
+|------|------|------|
+| `starter/` | Code de Project 01 avec import, vue détail et persistance encore incomplets. La documentation existe, mais elle est plus légère et il n'y a pas de `session-handoff.md`. | Combien de contexte une deuxième session doit redécouvrir. |
+| `solution/` | Même tranche produit terminée, avec documentation de reprise sous `projects/project-02/solution/`, plus `feature_list.json` et `session-handoff.md`. | Si une nouvelle session peut reprendre uniquement depuis l'état du dépôt. |
+
 ## Outils
 
 - Claude Code ou Codex

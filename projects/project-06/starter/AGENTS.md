@@ -11,17 +11,22 @@
 This is the capstone project for the Learn Harness Engineering course. It combines all features from previous projects:
 - Document import, indexing, and Q&A
 - Conversation history view
-- Structured logging for observability
 - Clean state management for testing
 
-## What to Build
+This starter intentionally has a weak harness surface. It does not include
+`CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, benchmark
+scripts, or cleanup scripts. Use it as the baseline for comparison with
+`../solution/`.
 
-The application needs:
-1. A working ConversationHistory component with chat-style display
+## What to Evaluate or Improve
+
+The baseline should be evaluated against the solution on:
+
+1. ConversationHistory completeness
 2. Feedback buttons on Q&A responses (thumbs up/down)
-3. Structured logging that all services use
-4. A clean state reset function
-5. Benchmark scripts for measuring performance
+3. Structured logging coverage
+4. Clean state reset behavior
+5. Harness artifacts and benchmark automation that exist in `../solution/`
 
 ## Conventions
 

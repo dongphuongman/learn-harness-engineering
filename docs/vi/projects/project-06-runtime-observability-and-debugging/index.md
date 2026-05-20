@@ -11,6 +11,15 @@
 
 Sử dụng một bộ tác vụ đa tính năng cố định bao phủ toàn bộ product slice: import tài liệu, indexing, Q&A dựa trên trích dẫn, observability runtime, và trạng thái repo có thể đọc và khởi động lại. Lần đầu chạy với baseline harness yếu, sau đó với harness mạnh nhất của bạn, sau đó dọn dẹp và chạy lại. Cuối cùng, thực hiện thí nghiệm ablation harness — xóa từng thành phần một và xem cái nào thực sự quan trọng.
 
+## Dùng project có sẵn trong repo
+
+Đường dẫn repo: `projects/project-06/`
+
+| Thư mục | Nội dung | So sánh gì |
+|------|------|------|
+| `starter/` | Sản phẩm gần như hoàn chỉnh, nhưng harness bị cố ý làm yếu: chỉ có `AGENTS.md` cơ bản, không có `feature_list.json`, `session-handoff.md`, clean-state checklist hay benchmark/cleanup scripts. | Ghi nhận thủ công baseline với harness yếu. |
+| `solution/` | Harness đầy đủ: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, tài liệu chất lượng/đánh giá và scripts. | Chạy `projects/project-06/solution/scripts/benchmark.sh` và `projects/project-06/solution/scripts/cleanup-scanner.sh`, rồi so sánh bằng chứng chất lượng. |
+
 ## Công cụ
 
 - Claude Code hoặc Codex

@@ -11,6 +11,17 @@
 
 اختر ترقية جوهرية لميزة، مثل محادثة متعددة الأدوار، أو إعادة تصميم لوحة الاستشهادات، أو فلترة المستندات، وحافظ عليها ثابتة في كل التشغيلات.
 
+## استخدم المشروع الموجود في المستودع
+
+مسار المستودع: `projects/project-05/`
+
+| المجلد | ماذا يحتوي | ماذا تقارن |
+|------|------|------|
+| `starter/` | تطبيق مبني على Project 04 قبل ترقية سجل المحادثة. | نقطة البداية إذا أردت إعادة تشغيل المتغيرات الثلاثة. |
+| `solution/single-role/` | وكيل واحد يخطط وينفذ ويقيّم نفسه. | الدرجة والعيوب في `evaluator-rubric.md`. |
+| `solution/gen-eval/` | generator + evaluator مع دليل مراجعة. | الدرجة وملاحظات revision في `evaluator-rubric.md`. |
+| `solution/plan-gen-eval/` | planner + generator + evaluator مع sprint contract. | `sprint-contract.md` ودليل الدرجة الأعلى في `evaluator-rubric.md`. |
+
 ## الأدوات
 
 - Claude Code أو Codex

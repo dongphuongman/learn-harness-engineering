@@ -32,5 +32,5 @@ Run this checklist before committing and at the end of each session.
 
 - [ ] No unintended files in git status
 - [ ] No sensitive data (.env, credentials) staged
-- [ ] `claude-progress.md` updated with current state
-- [ ] `feature_list.json` reflects actual feature status
+- [ ] Final summary records current state, verification run, and any unresolved risk
+- [ ] `AGENTS.md`, `docs/ARCHITECTURE.md`, and this checklist still match the files that actually exist in this starter

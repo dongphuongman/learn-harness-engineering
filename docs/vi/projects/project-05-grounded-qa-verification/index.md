@@ -11,6 +11,17 @@ Triển khai phân tách vai trò — một generator thực hiện, một evalu
 
 Chọn một tính năng nâng cấp thực chất (hội thoại đa lượt, thiết kế lại citation panel, hoặc lọc tài liệu) và giữ nó nhất quán qua tất cả các lần chạy.
 
+## Dùng project có sẵn trong repo
+
+Đường dẫn repo: `projects/project-05/`
+
+| Thư mục | Nội dung | So sánh gì |
+|------|------|------|
+| `starter/` | Ứng dụng dựa trên Project 04 trước khi nâng cấp lịch sử hội thoại. | Điểm bắt đầu nếu muốn chạy lại ba biến thể. |
+| `solution/single-role/` | Một agent tự lập kế hoạch, triển khai và tự đánh giá. | Điểm số và lỗi trong `evaluator-rubric.md`. |
+| `solution/gen-eval/` | Generator + evaluator, có bằng chứng sửa đổi. | Điểm số và revision notes trong `evaluator-rubric.md`. |
+| `solution/plan-gen-eval/` | Planner + generator + evaluator với sprint contract. | `sprint-contract.md` và bằng chứng điểm cao hơn trong `evaluator-rubric.md`. |
+
 ## Công cụ
 
 - Claude Code hoặc Codex

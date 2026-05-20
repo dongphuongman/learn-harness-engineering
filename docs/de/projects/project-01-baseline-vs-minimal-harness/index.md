@@ -11,7 +11,7 @@ Baue das minimale Gerüst einer Electron-Wissensdatenbank-App: ein Fenster mit D
 
 Du führst sie zweimal aus. Beim ersten Mal: nur ein Prompt, keine Vorbereitung. Beim zweiten Mal: `AGENTS.md`, `init.sh` und `feature_list.json` liegen bereits im Repository. Danach vergleichst du.
 
-Der Kern dieses Projekts ist nicht das Schreiben von Code, sondern herauszufinden, wie groß der Abstand zwischen "15 Minuten Regeln vorbereiten" und "den Agenten einfach loslaufen lassen" ist.
+Dieses Kursbeispiel nutzt eine kurze Wiederentdeckungs-/Vorbereitungsphase als Beispiel, nicht als fest gemessenes Ergebnis.
 
 ## Werkzeuge
 
@@ -23,3 +23,14 @@ Der Kern dieses Projekts ist nicht das Schreiben von Code, sondern herauszufinde
 ## Harness-Mechanismus
 
 Minimaler harness: `AGENTS.md` + `init.sh` + `feature_list.json`
+
+## Nutze das eingecheckte Projekt
+
+Repository-Pfad: `projects/project-01/`
+
+| Verzeichnis | Inhalt | Nutzung/Vergleich |
+|------|------|------|
+| `starter/` | Weak-Harness-Lauf. Enthält nur `task-prompt.md` als Aufgabenbeschreibung und keine `AGENTS.md` oder `feature_list.json`. | Gib den Prompt an deinen Agenten und miss, was ohne zusätzliche Struktur fertig wird. |
+| `solution/` | Gleicher Produktslice mit expliziten Harness-Artefakten: `AGENTS.md`, `CLAUDE.md`, `init.sh`, `feature_list.json` und `claude-progress.md`. | Vergleiche, wie Regeln und Verifikation die gleiche Aufgabe konkret und überprüfbar machen. |
+
+Die vier konkreten Features sind Fensterstart, Dokumentliste, Frage-Panel und das lokale Datenverzeichnis. Schau in `solution/feature_list.json` für die erwartete Evidence pro Feature.

@@ -9,6 +9,17 @@
 
 你要用一套固定的多功能任务集，覆盖知识库应用的完整产品切片：导入文档、构建索引、带引用的问答、运行时可观测性、可读可重启的仓库状态。先跑一次弱 harness 基线，再跑一次你组装的最强 harness，然后做一轮清理和重跑。最后还要做一次 harness 精简实验——删掉一个组件看看结果会不会变差，判断哪些组件是真正有用的、哪些是多余的开销。
 
+## 使用仓库里的项目
+
+仓库路径：`projects/project-06/`
+
+| 目录 | 里面有什么 | 比较什么 |
+|------|------|------|
+| `starter/` | 大部分产品代码已经完成，但 harness 表面较弱：只有基础 `AGENTS.md`，没有 `feature_list.json`、`session-handoff.md`、clean-state checklist。 | 手动记录弱 harness 基线。starter 故意不包含 benchmark 脚本。 |
+| `solution/` | 完整 harness：`AGENTS.md`、`CLAUDE.md`、`feature_list.json`、`init.sh`、`session-handoff.md`、`clean-state-checklist.md`、质量/评估文档、benchmark 和 cleanup 脚本。 | 运行 `projects/project-06/solution/scripts/benchmark.sh`、`projects/project-06/solution/scripts/cleanup-scanner.sh`，对比质量文档证据。 |
+
+和前几个项目不同，capstone starter 不是缺很多产品功能；主要缺口是应用周围的操作 harness。
+
 ## 用什么工具
 
 - Claude Code 或 Codex

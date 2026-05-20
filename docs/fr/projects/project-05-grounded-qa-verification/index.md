@@ -11,6 +11,17 @@ Implémentez la séparation des rôles : un generator qui implémente, un evalua
 
 Choisissez une amélioration substantielle de fonctionnalité, comme une conversation multi-tour, une refonte du panneau de citations ou un filtrage de documents, et gardez-la identique dans toutes les exécutions.
 
+## Utiliser le projet fourni
+
+Chemin dans le dépôt : `projects/project-05/`
+
+| Dossier | Contenu | À comparer |
+|------|------|------|
+| `starter/` | Application basée sur Project 04 avant l'ajout de l'historique conversationnel. | Point de départ pour relancer les trois variantes. |
+| `solution/single-role/` | Un agent planifie, implémente et s'auto-évalue. | Score et défauts dans `evaluator-rubric.md`. |
+| `solution/gen-eval/` | Générateur + évaluateur avec preuve de révision. | Score et notes de révision dans `evaluator-rubric.md`. |
+| `solution/plan-gen-eval/` | Planner + générateur + évaluateur avec sprint contract. | `sprint-contract.md` et preuves de score plus élevé dans `evaluator-rubric.md`. |
+
 ## Outils
 
 - Claude Code ou Codex

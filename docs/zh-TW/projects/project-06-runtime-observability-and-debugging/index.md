@@ -9,6 +9,15 @@
 
 你要用一套固定的多功能任務集，覆蓋知識庫應用的完整產品切片：導入文檔、構建索引、帶引用的問答、運行時可觀測性、可讀可重啟的倉庫狀態。先跑一次弱 harness 基線，再跑一次你組裝的最強 harness，然後做一輪清理和重跑。最後還要做一次 harness 精簡實驗——刪掉一個組件看看結果會不會變差，判斷哪些組件是真正有用的、哪些是多餘的開銷。
 
+## 使用倉庫內建專案
+
+倉庫路徑：`projects/project-06/`
+
+| 目錄 | 內容 | 怎麼用 / 比較什麼 |
+|------|------|------|
+| `starter/` | 產品功能基本完整，但 harness 表面刻意削弱（只有基礎 `AGENTS.md`，沒有 `feature_list.json` / `session-handoff.md` / `clean-state-checklist.md`，也沒有 benchmark/cleanup 腳本）。 | 手動記錄弱 harness 基線行為（錯誤定位速度、是否過早宣告完成等）。 |
+| `solution/` | 最大化 harness：`AGENTS.md`、`CLAUDE.md`、`feature_list.json`、`init.sh`、`session-handoff.md`、`clean-state-checklist.md`、品質/評估文檔、benchmark 與 cleanup 腳本。 | 在 `projects/project-06/solution/` 下跑 `./scripts/benchmark.sh` 與 `./scripts/cleanup-scanner.sh`，再對照品質文檔證據。 |
+
 ## 用什麼工具
 
 - Claude Code 或 Codex

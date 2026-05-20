@@ -23,6 +23,24 @@ npm install
 # Rerun with the complete harness and compare session recovery speed
 ```
 
+## Exact Task Contract
+
+Start from `starter/`. The starter already contains the Project 01 shell and a
+minimal harness. The work is to add the Project 02 product slice and the
+workspace documentation that makes a second session recover quickly.
+
+| Feature / artifact | Starter state | Solution evidence |
+|------|------|------|
+| Document import | Import flow is incomplete across renderer, preload, IPC, and `DocumentService` | `src/renderer/components/ImportPanel.tsx`, `src/main/ipc-handlers.ts`, `src/services/document-service.ts` |
+| Document detail | Detail panel does not load and render full file content through IPC | `src/renderer/components/DocumentDetail.tsx`, `IPC_CHANNELS.GET_DOCUMENT_CONTENT` |
+| Basic persistence | Imported documents are not fully restored after restart | `src/services/persistence-service.ts`, `documents-meta.json` handling |
+| Agent-readable state | No final handoff file in starter | `session-handoff.md`, expanded `docs/ARCHITECTURE.md`, expanded `docs/PRODUCT.md` |
+
+Run this as a two-session exercise. Stop Session A before all three product
+features are complete, then start Session B from only the repository state. The
+main comparison is how much faster Session B can resume when `session-handoff.md`
+and the docs exist.
+
 ## Features Covered
 
 - Document import flow (file picker plus IPC transfer)

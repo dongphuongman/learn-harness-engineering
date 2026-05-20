@@ -11,6 +11,15 @@ Bu capstone (yakunlovchi) loyihadir. Dastlabki beshta loyihada oʻrganilgan barc
 
 Toʻliq mahsulot boʻlagini (product slice) qamrab oladigan qatʼiy koʻp funksiyali (multi-feature) vazifalar toʻplamidan foydalaning: hujjatni import qilish, indekslash, iqtiboslarga asoslangan Q&A, runtime kuzatuvchanligi va oʻqish mumkin boʻlgan qayta ishga tushiriladigan (restartable) repo holati. Avval kuchsiz asosiy (baseline) harness bilan ishga tushiring, soʻngra oʻzingizning eng kuchli harnessʼingiz bilan, oxirida esa tozalash qilib, qayta ishlating. Va nihoyat, harnessʼda ablasyon (ablation) tajribasini oʻtkazing — har bir komponentni bittadan olib tashlang va haqiqatda qaysi biri muhim ekanligini aniqlang.
 
+## Repodagi tayyor loyihadan foydalaning
+
+Repo yoʻli: `projects/project-06/`
+
+| Katalog | Nimalar bor | Nimani taqqoslash |
+|------|------|------|
+| `starter/` | Mahsulot deyarli tayyor, lekin harness ataylab zaiflashtirilgan: faqat asosiy `AGENTS.md`, `feature_list.json`, `session-handoff.md`, clean-state checklist va benchmark/cleanup scripts yoʻq. | Zaif harness baselineʼini qoʻlda kuzatish. |
+| `solution/` | Toʻliq harness: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, quality/evaluator docs va scripts. | `projects/project-06/solution/scripts/benchmark.sh` va `projects/project-06/solution/scripts/cleanup-scanner.sh`ni ishga tushirib, quality evidenceʼni taqqoslash. |
+
 ## Vositalar
 
 - Claude Code yoki Codex

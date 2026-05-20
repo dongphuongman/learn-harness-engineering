@@ -11,6 +11,17 @@ Qatlamlararo qoidabuzilishlarning (cross-layer violations) oldini olish uchun ru
 
 Siz buni ikki marta bajarasiz: birinchisida loglar va cheklovlarsiz, ikkinchisida tegishli vositalar va qoidalar bilan.
 
+## Repodagi tayyor loyihadan foydalaning
+
+Repo yoʻli: `projects/project-04/`
+
+| Katalog | Nimalar bor | Nimani taqqoslash |
+|------|------|------|
+| `starter/` | Project 03 kodi, diagnostika signallari zaif. Kiritilgan indexing nuqsoni katta fayllar chunkingʼini buzishi mumkin; architecture check script yoʻq. | Runtime signallarsiz agent root causeʼni qancha vaqtda topadi. |
+| `solution/` | Structured logger, architecture boundary hujjatlari va script, tuzatilgan chunking logic, `clean-state-checklist.md`. | Logs va boundary checks tuzatishni tezroq va kamroq xavfli qiladimi. |
+
+Tekshiriladigan fayllar: `projects/project-04/solution/src/services/logger.ts`, `projects/project-04/solution/scripts/check-architecture.sh`, `projects/project-04/solution/docs/ARCHITECTURE.md`, `projects/project-04/solution/src/services/indexing-service.ts`.
+
 ## Vositalar
 
 - Claude Code yoki Codex

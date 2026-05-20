@@ -13,6 +13,15 @@
 
 두 번 실행합니다. 첫 번째는 제약 없이, 두 번째는 엄격한 적용 방식으로 진행합니다.
 
+## 저장소에 포함된 프로젝트 사용하기
+
+저장소 경로: `projects/project-03/`
+
+| 디렉터리 | 내용 | 비교할 것 |
+|------|------|------|
+| `starter/` | Project 02 코드에서 indexing과 citation 기반 Q&A가 아직 미완성입니다. 초기 `feature_list.json`은 있지만 최종 handoff/restart 산출물은 없습니다. | 여러 기능 사이에서 에이전트가 drift하거나 재시작 후 상태를 잃는지. |
+| `solution/` | chunking, metadata, index status, citation-based QA가 완성되어 있고 `init.sh`, `session-handoff.md`, `claude-progress.md`, `clean-state-checklist.md`가 있습니다. | 각 기능이 pass로 표시되기 전에 구체적 검증 증거가 있는지. |
+
 ## 도구
 
 - Claude Code 또는 Codex

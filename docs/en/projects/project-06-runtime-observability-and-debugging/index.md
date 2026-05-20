@@ -23,3 +23,15 @@ Use a fixed multi-feature task set covering the complete product slice: document
 ## Harness Mechanism
 
 Complete harness: all mechanisms + observability + ablation study
+
+## Use the Checked-In Project
+
+Repository path: `projects/project-06/`
+
+| Directory | What it contains | What to compare |
+|------|------|------|
+| `starter/` | Mostly complete product code with intentionally weak harness surface: basic `AGENTS.md`, no `feature_list.json`, no `session-handoff.md`, no clean-state checklist. | Manual weak-harness baseline observations. The starter intentionally does not include benchmark scripts. |
+| `solution/` | Full harness surface: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, quality/evaluator docs, benchmark and cleanup scripts. | Run `projects/project-06/solution/scripts/benchmark.sh` and `projects/project-06/solution/scripts/cleanup-scanner.sh`, then compare quality-document evidence. |
+
+Unlike earlier projects, the capstone starter is not mostly missing product
+features. The main gap is the operating harness around the app.

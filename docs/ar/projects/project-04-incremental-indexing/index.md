@@ -11,6 +11,17 @@
 
 ستنفذه مرتين: الأولى دون سجلات أو قيود، والثانية بالأدوات والقواعد المناسبة.
 
+## استخدم المشروع الموجود في المستودع
+
+مسار المستودع: `projects/project-04/`
+
+| المجلد | ماذا يحتوي | ماذا تقارن |
+|------|------|------|
+| `starter/` | كود Project 03 مع إشارات تشخيص ضعيفة. عيب indexing المزروع قد يكسر chunking للملفات الكبيرة، ولا يوجد script لفحص المعمارية. | كم يستغرق الوكيل للوصول إلى السبب الجذري بدون إشارات runtime. |
+| `solution/` | structured logger، وثائق/script لحدود المعمارية، منطق chunking مصحح، و `clean-state-checklist.md`. | هل تجعل logs و boundary checks الإصلاح أسرع وأقل تدخلاً. |
+
+ملفات مهمة: `projects/project-04/solution/src/services/logger.ts`, `projects/project-04/solution/scripts/check-architecture.sh`, `projects/project-04/solution/docs/ARCHITECTURE.md`, `projects/project-04/solution/src/services/indexing-service.ts`.
+
 ## الأدوات
 
 - Claude Code أو Codex

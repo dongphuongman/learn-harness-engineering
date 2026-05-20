@@ -11,6 +11,15 @@ Agentga skoup nazorati (scope control) va tekshirish eshiklarini (verification g
 
 Siz buni ikki marta bajarasiz: birinchisida hech qanday cheklovlarsiz, ikkinchisida esa qatʼiy talablar asosida.
 
+## Repodagi tayyor loyihadan foydalaning
+
+Repo yoʻli: `projects/project-03/`
+
+| Katalog | Nimalar bor | Nimani taqqoslash |
+|------|------|------|
+| `starter/` | Project 02 kodi, indexing va citation-based Q&A hali tugallanmagan. Boshlangʻich `feature_list.json` bor, lekin yakuniy handoff/restart artefaktlari yoʻq. | Agent bir nechta feature orasida chalgʻiydimi yoki restartdan keyin holatni yoʻqotadimi. |
+| `solution/` | Chunking, metadata, index status va citation-based Q&A tugallangan; `init.sh`, `session-handoff.md`, `claude-progress.md`, `clean-state-checklist.md` bor. | Har bir feature pass bo‘lishidan oldin aniq tekshiruv daliliga egami. |
+
 ## Vositalar
 
 - Claude Code yoki Codex

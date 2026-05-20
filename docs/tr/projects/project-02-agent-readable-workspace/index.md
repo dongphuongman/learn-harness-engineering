@@ -11,6 +11,17 @@ Depoya "okunabilirlik" ekleyin; böylece yeni bir ajan proje yapısını hızla 
 
 İki kez çalıştırın: ilk seferinde hiçbir yardım olmadan, ikinci seferinde `ARCHITECTURE.md`, `PRODUCT.md` ve `session-handoff.md` önceden depoya yerleştirilmiş şekilde.
 
+## Depodaki projeyi kullanın
+
+Depo yolu: `projects/project-02/`
+
+| Dizin | İçerik | Nasıl kullanılır |
+|------|------|------|
+| `starter/` | Project 01 kodu; tamamlanmamış doküman içe aktarma, detay görünümü ve kalıcılık içerir. Dokümanlar vardır ama incedir; `session-handoff.md` yoktur. | İkinci agent oturumunun ne kadar bağlamı yeniden keşfetmesi gerektiğini ölçün. |
+| `solution/` | Aynı ürün dilimini tamamlar ve `projects/project-02/solution/` altında çekirdek dokümanları, `feature_list.json` ve `session-handoff.md` dosyalarını ekler. | Yeni oturumun yalnızca depo durumuna bakarak çalışmaya devam edip edemediğini kontrol edin. |
+
+Ürün özellikleri doküman içe aktarma, tam detay/içerik yükleme ve yeniden başlatmalar arasında kalıcılıktır; harness özelliği ise devredilebilir, agent-readable workspace'tir.
+
 ## Araçlar
 
 - Claude Code veya Codex

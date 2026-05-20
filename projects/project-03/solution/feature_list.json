@@ -1,6 +1,6 @@
 {
   "project": "project-03",
-  "description": "Scope control and grounded verification with indexing, metadata, and grounded QA",
+  "description": "Multi-session continuity with scope control, indexing, metadata, and grounded QA",
   "features": [
     {
       "id": "window-launch",

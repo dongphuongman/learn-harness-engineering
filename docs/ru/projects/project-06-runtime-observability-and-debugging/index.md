@@ -11,6 +11,15 @@
 
 Используйте фиксированный набор multi-feature задач, охватывающий полный продуктовый срез: импорт документов, индексация, Q&A с цитатами, runtime-наблюдаемость и читаемое перезапускаемое состояние репозитория. Сначала запустите со слабым harness-baseline, затем с самым сильным harness, потом — уборку и повторный запуск. Наконец, проведите эксперимент с абляцией harness — убирайте по одному компоненту за раз и смотрите, какие из них реально важны.
 
+## Используйте проект из репозитория
+
+Путь: `projects/project-06/`
+
+| Каталог | Что внутри | Что сравнивать |
+|------|------|------|
+| `starter/` | Продукт почти готов, но harness намеренно ослаблен: базовый `AGENTS.md`, нет `feature_list.json`, `session-handoff.md`, clean-state checklist и benchmark/cleanup scripts. | Ручные наблюдения baseline со слабым harness. |
+| `solution/` | Полный harness: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, quality/evaluator docs и scripts. | Запустить `projects/project-06/solution/scripts/benchmark.sh` и `projects/project-06/solution/scripts/cleanup-scanner.sh`, затем сравнить quality evidence. |
+
 ## Инструменты
 
 - Claude Code или Codex

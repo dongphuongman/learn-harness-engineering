@@ -11,6 +11,17 @@
 
 Вы запускаете задачу дважды: первый раз — без логов и ограничений, второй — с правильными инструментами и правилами.
 
+## Используйте проект из репозитория
+
+Путь: `projects/project-04/`
+
+| Каталог | Что внутри | Что сравнивать |
+|------|------|------|
+| `starter/` | Код Project 03 со слабыми диагностическими сигналами. Встроенный дефект indexing может ломать chunking больших файлов; скрипта проверки архитектуры нет. | Как быстро агент находит причину без runtime-сигналов. |
+| `solution/` | Структурированный logger, документы и скрипт архитектурных границ, исправленная логика chunking и `clean-state-checklist.md`. | Помогают ли logs и проверки границ исправлять быстрее и аккуратнее. |
+
+Ключевые файлы: `projects/project-04/solution/src/services/logger.ts`, `projects/project-04/solution/scripts/check-architecture.sh`, `projects/project-04/solution/docs/ARCHITECTURE.md`, `projects/project-04/solution/src/services/indexing-service.ts`.
+
 ## Инструменты
 
 - Claude Code или Codex

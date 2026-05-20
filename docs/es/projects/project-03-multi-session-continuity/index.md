@@ -11,6 +11,15 @@ Añade control de alcance y gates de verificación al agente. Implementa partici
 
 Lo ejecutarás dos veces: primero sin restricciones, luego con aplicación estricta de reglas.
 
+## Usa el proyecto incluido
+
+Ruta en el repositorio: `projects/project-03/`
+
+| Directorio | Qué contiene | Qué comparar |
+|------|------|------|
+| `starter/` | Código de Project 02 con indexación y Q&A fundamentado todavía incompletos. Incluye un `feature_list.json` inicial, pero no los artefactos finales de reinicio y handoff. | Si el agente se desvía entre varias funciones o pierde estado al reiniciar. |
+| `solution/` | Chunking, metadatos, estado de indexación y Q&A con citas completados, además de `init.sh`, `session-handoff.md`, `claude-progress.md` y `clean-state-checklist.md`. | Si cada función tiene evidencia concreta antes de marcarse como aprobada. |
+
 ## Herramientas
 
 - Claude Code o Codex

@@ -13,6 +13,17 @@
 
 두 번 실행합니다. 첫 번째는 로그나 제약 없이, 두 번째는 적절한 도구와 규칙(rules)을 갖춘 상태로 진행합니다.
 
+## 저장소에 포함된 프로젝트 사용하기
+
+저장소 경로: `projects/project-04/`
+
+| 디렉터리 | 내용 | 비교할 것 |
+|------|------|------|
+| `starter/` | Project 03 코드이며 진단 신호가 약합니다. 삽입된 indexing 결함이 큰 파일 chunking을 깨뜨릴 수 있고 architecture check script가 없습니다. | runtime 신호 없이 근본 원인을 찾는 데 걸리는 시간. |
+| `solution/` | structured logger, architecture boundary docs/script, 수정된 chunking logic, `clean-state-checklist.md`가 있습니다. | logs와 boundary checks가 수정 속도와 안정성을 개선하는지. |
+
+확인 파일: `projects/project-04/solution/src/services/logger.ts`, `projects/project-04/solution/scripts/check-architecture.sh`, `projects/project-04/solution/docs/ARCHITECTURE.md`, `projects/project-04/solution/src/services/indexing-service.ts`.
+
 ## 도구
 
 - Claude Code 또는 Codex

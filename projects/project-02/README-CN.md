@@ -23,6 +23,20 @@ npm install
 # 用完整 harness 重跑，对比会话恢复速度
 ```
 
+## 具体任务对应关系
+
+从 `starter/` 开始。starter 已经有 Project 01 的应用壳和一个较弱的
+harness。本项目要补的是 Project 02 的产品切片，以及让第二个会话能快速接手的仓库文档。
+
+| 功能 / 产物 | starter 状态 | solution 证据 |
+|------|------|------|
+| 文档导入 | renderer、preload、IPC、`DocumentService` 的导入链路不完整 | `ImportPanel.tsx`, `ipc-handlers.ts`, `document-service.ts` |
+| 文档详情 | 详情面板还不能通过 IPC 加载并显示完整内容 | `DocumentDetail.tsx`, `IPC_CHANNELS.GET_DOCUMENT_CONTENT` |
+| 基本持久化 | 导入文档不能完整跨重启恢复 | `persistence-service.ts`, `documents-meta.json` 处理 |
+| agent 可读状态 | starter 没有最终交接文件 | `session-handoff.md`, 扩展后的 `docs/ARCHITECTURE.md` 和 `docs/PRODUCT.md` |
+
+请按两次会话来跑：Session A 在三个功能全部完成前停止，Session B 只能依靠仓库状态继续。主要比较指标是有无交接文件时的恢复速度。
+
 ## 本项目涉及的功能
 
 - 文档导入流程（文件选择器 + IPC 传输）

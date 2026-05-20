@@ -11,6 +11,17 @@ Implementiere Rollentrennung: einen generator für die Umsetzung, einen evaluato
 
 Wähle eine substanzielle Feature-Erweiterung, etwa Multi-Turn-Konversation, Neugestaltung des Zitat-Panels oder Dokumentfilterung, und halte sie über alle Läufe hinweg konstant.
 
+## Nutze das eingecheckte Projekt
+
+Repository-Pfad: `projects/project-05/`
+
+| Verzeichnis | Inhalt | Vergleichspunkt |
+|------|------|------|
+| `starter/` | Project-04-basierte App vor dem Upgrade für Gesprächshistorie. | Ausgangspunkt, wenn du die drei Varianten selbst erneut ausführen willst. |
+| `solution/single-role/` | Ein Agent plant, implementiert und bewertet sich selbst. | Bewertung und Defektliste in `evaluator-rubric.md`. |
+| `solution/gen-eval/` | Generator + Evaluator mit Revisionsnachweis. | Bewertung und Revisionsnotizen in `evaluator-rubric.md`. |
+| `solution/plan-gen-eval/` | Planner + Generator + Evaluator mit Sprint Contract. | `sprint-contract.md` und höhere Bewertungsnachweise in `evaluator-rubric.md`. |
+
 ## Werkzeuge
 
 - Claude Code oder Codex

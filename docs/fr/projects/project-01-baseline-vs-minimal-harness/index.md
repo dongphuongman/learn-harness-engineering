@@ -11,7 +11,7 @@ Construisez le squelette minimal d'une application Electron de base de connaissa
 
 Vous l'exécutez deux fois. Première fois : seulement un prompt, sans préparation. Deuxième fois : `AGENTS.md`, `init.sh` et `feature_list.json` déjà placés dans le dépôt. Ensuite, comparez.
 
-Le cœur de ce projet n'est pas d'écrire du code, mais de mesurer l'écart entre "passer 15 minutes à préparer les règles" et "laisser simplement l'agent partir".
+Ce scénario de cours prend un court intervalle de redécouverte/préparation comme exemple, pas un résultat mesuré fixe.
 
 ## Outils
 
@@ -23,3 +23,14 @@ Le cœur de ce projet n'est pas d'écrire du code, mais de mesurer l'écart entr
 ## Mécanisme de harness
 
 Harness minimal : `AGENTS.md` + `init.sh` + `feature_list.json`
+
+## Utiliser le projet fourni dans le dépôt
+
+Chemin dans le dépôt : `projects/project-01/`
+
+| Dossier | Ce qu’il contient | Comment l’utiliser |
+|------|------|------|
+| `starter/` | Exécution « harness faible ». Contient uniquement `task-prompt.md` comme description de la tâche, sans `AGENTS.md` ni `feature_list.json`. | Donne le prompt à ton agent et mesure ce qu’il termine sans structure supplémentaire. |
+| `solution/` | Le même slice produit avec des artefacts de harness explicites : `AGENTS.md`, `CLAUDE.md`, `init.sh`, `feature_list.json` et `claude-progress.md`. | Compare comment les règles et la vérification rendent la même tâche concrète et vérifiable. |
+
+Les quatre fonctionnalités concrètes sont : ouverture de la fenêtre, liste de documents, panneau de questions, et création du répertoire de données local. Consulte `solution/feature_list.json` pour l’évidence attendue pour chaque fonctionnalité.

@@ -11,6 +11,17 @@ Füge Runtime-Beobachtbarkeit hinzu, etwa Startlogs, Import-/Indexierungslogs un
 
 Du führst es zweimal aus: zuerst ohne Logs oder Regeln, dann mit passenden Werkzeugen und Regeln.
 
+## Nutze das eingecheckte Projekt
+
+Repository-Pfad: `projects/project-04/`
+
+| Verzeichnis | Inhalt | Vergleichspunkt |
+|------|------|------|
+| `starter/` | Project-03-Code mit schwachen Diagnosesignalen. Der eingebaute Indexierungsfehler kann Chunking bei großen Dateien brechen, und es gibt kein Architekturprüfskript. | Wie lange der Agent ohne Runtime-Signale bis zur Ursache braucht. |
+| `solution/` | Strukturierter Logger, Architekturgrenzendokumentation und Prüfsktipt, korrigierte Chunking-Logik und `clean-state-checklist.md`. | Ob Logs und Grenzprüfungen die Korrektur schneller und weniger invasiv machen. |
+
+Wichtige Dateien: `projects/project-04/solution/src/services/logger.ts`, `projects/project-04/solution/scripts/check-architecture.sh`, `projects/project-04/solution/docs/ARCHITECTURE.md`, `projects/project-04/solution/src/services/indexing-service.ts`.
+
 ## Werkzeuge
 
 - Claude Code oder Codex

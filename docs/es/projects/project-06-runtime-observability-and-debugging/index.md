@@ -11,6 +11,15 @@ Este es el proyecto final. Ensambla todo lo aprendido en los primeros cinco proy
 
 Usa un conjunto fijo de tareas multi-función que cubra una porción completa del producto: importación de documentos, indexación, Q&A con citas, observabilidad de runtime y estado de repositorio legible y reiniciable. Primero ejecuta con un baseline de harness débil, luego con tu harness más fuerte, después limpia y vuelve a ejecutar. Finalmente, realiza un experimento de ablación del harness: elimina un componente cada vez y observa cuáles importan realmente.
 
+## Usa el proyecto incluido
+
+Ruta en el repositorio: `projects/project-06/`
+
+| Directorio | Qué contiene | Qué comparar |
+|------|------|------|
+| `starter/` | Producto casi completo, pero con superficie de harness debilitada: `AGENTS.md` básico, sin `feature_list.json`, `session-handoff.md`, checklist de estado limpio ni scripts de benchmark/cleanup. | Observaciones manuales de la línea base con harness débil. |
+| `solution/` | Harness completo: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, documentos de calidad/evaluación y scripts. | Ejecutar `projects/project-06/solution/scripts/benchmark.sh` y `projects/project-06/solution/scripts/cleanup-scanner.sh`, y comparar la evidencia de calidad. |
+
 ## Herramientas
 
 - Claude Code o Codex

@@ -11,6 +11,15 @@
 
 ستنفذه مرتين: الأولى دون قيود، والثانية مع تطبيق صارم.
 
+## استخدم المشروع الموجود في المستودع
+
+مسار المستودع: `projects/project-03/`
+
+| المجلد | ماذا يحتوي | ماذا تقارن |
+|------|------|------|
+| `starter/` | كود Project 02 وفيه indexing و Q&A مع citations غير مكتملين بعد. يوجد `feature_list.json` أولي، لكن لا توجد ملفات handoff/restart النهائية. | هل ينحرف الوكيل بين عدة ميزات أو يفقد الحالة بعد إعادة التشغيل. |
+| `solution/` | chunking و metadata و index status و citation-based Q&A مكتملة، مع `init.sh` و `session-handoff.md` و `claude-progress.md` و `clean-state-checklist.md`. | هل تملك كل ميزة دليل تحقق قبل وضعها في حالة pass. |
+
 ## الأدوات
 
 - Claude Code أو Codex

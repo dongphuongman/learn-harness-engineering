@@ -13,6 +13,15 @@
 
 에이전트는 컨텍스트 윈도(context window)가 초기화되면 이전 작업 흐름을 기억하지 못합니다. 세션 핸드오프(session handoff) 파일을 통해 이전 세션의 상태(state)를 영속화하면, 새 세션의 에이전트도 동일한 진행 지점에서 출발할 수 있습니다.
 
+## 저장소에 포함된 프로젝트 사용하기
+
+저장소 경로: `projects/project-02/`
+
+| 디렉터리 | 내용 | 비교할 것 |
+|------|------|------|
+| `starter/` | Project 01 코드에 문서 가져오기, 상세 보기, 지속성이 아직 완성되지 않은 상태입니다. 문서는 있지만 더 얇고 `session-handoff.md`가 없습니다. | 두 번째 에이전트 세션이 얼마나 많은 컨텍스트를 다시 찾아야 하는지. |
+| `solution/` | 같은 제품 범위가 완성되어 있고, `projects/project-02/solution/` 아래에 인수인계 문서와 `feature_list.json`, `session-handoff.md`가 있습니다. | 새 세션이 저장소 상태만 보고 이어갈 수 있는지. |
+
 ## 도구
 
 - Claude Code 또는 Codex

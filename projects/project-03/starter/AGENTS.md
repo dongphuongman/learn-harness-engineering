@@ -1,4 +1,4 @@
-# AGENTS.md -- Project 03: Scope Control and Grounded Verification
+# AGENTS.md -- Project 03: Multi-Session Continuity with Scope Control
 
 ## Quick Start
 
@@ -41,4 +41,7 @@ A feature is "done" when:
 
 ## Session Handoff
 
-When resuming work, read `session-handoff.md` for context from the previous session.
+When resuming work, first check whether `session-handoff.md` exists. The starter
+does not include it by default; if it is missing, reconstruct state from
+`feature_list.json`, `docs/ARCHITECTURE.md`, `docs/PRODUCT.md`, and the current
+git diff.

@@ -11,6 +11,15 @@
 
 استخدم مجموعة مهام ثابتة متعددة الميزات تغطي شريحة منتج كاملة: استيراد المستندات، الفهرسة، Q&A مع الاستشهادات، قابلية ملاحظة runtime، وحالة مستودع قابلة للقراءة والاستئناف. ابدأ بتشغيل baseline مع harness ضعيف، ثم شغّل أقوى harness لديك، ثم نظف وأعد التشغيل. أخيرًا، نفذ تجربة ablation للـ harness: أزل مكونًا واحدًا كل مرة وانظر أيها مهم فعليًا.
 
+## استخدم المشروع الموجود في المستودع
+
+مسار المستودع: `projects/project-06/`
+
+| المجلد | ماذا يحتوي | ماذا تقارن |
+|------|------|------|
+| `starter/` | المنتج شبه مكتمل، لكن سطح harness ضعيف عمدًا: يوجد `AGENTS.md` أساسي فقط، ولا يوجد `feature_list.json` أو `session-handoff.md` أو clean-state checklist أو benchmark/cleanup scripts. | ملاحظات يدوية لخط baseline مع harness ضعيف. |
+| `solution/` | harness كامل: `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md`, quality/evaluator docs و scripts. | شغّل `projects/project-06/solution/scripts/benchmark.sh` و `projects/project-06/solution/scripts/cleanup-scanner.sh` ثم قارن أدلة الجودة. |
+
 ## الأدوات
 
 - Claude Code أو Codex

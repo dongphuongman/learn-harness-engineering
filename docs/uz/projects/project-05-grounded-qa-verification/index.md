@@ -11,6 +11,17 @@ Rollarni ajratishni (role separation) amalga oshiring — kod yozuvchi (generato
 
 Diqqatga sazovor boʻlgan biror funksiya yangilanishini tanlang (koʻp bosqichli suhbat, iqtibos panelini qayta dizayn qilish yoki hujjatlarni filtrlash) va uni barcha urinishlar davomida bir xil qilib saqlang.
 
+## Repodagi tayyor loyihadan foydalaning
+
+Repo yoʻli: `projects/project-05/`
+
+| Katalog | Nimalar bor | Nimani taqqoslash |
+|------|------|------|
+| `starter/` | Project 04 asosidagi app, conversation history upgradeʼdan oldingi holat. | Uch variantni qayta ishga tushirish uchun boshlangʻich nuqta. |
+| `solution/single-role/` | Bitta agent rejalaydi, implement qiladi va oʻzini baholaydi. | `evaluator-rubric.md`dagi ball va nuqsonlar. |
+| `solution/gen-eval/` | Generator + evaluator, revision dalillari bor. | `evaluator-rubric.md`dagi ball va revision notes. |
+| `solution/plan-gen-eval/` | Planner + generator + evaluator va sprint contract. | `sprint-contract.md` hamda `evaluator-rubric.md`dagi yuqoriroq baho dalillari. |
+
 ## Vositalar
 
 - Claude Code yoki Codex

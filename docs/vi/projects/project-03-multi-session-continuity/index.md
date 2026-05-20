@@ -11,6 +11,15 @@ Thêm kiểm soát phạm vi và cổng xác minh vào agent. Triển khai docum
 
 Bạn chạy hai lần: lần đầu không có ràng buộc, lần hai với thực thi nghiêm ngặt.
 
+## Dùng project có sẵn trong repo
+
+Đường dẫn repo: `projects/project-03/`
+
+| Thư mục | Nội dung | So sánh gì |
+|------|------|------|
+| `starter/` | Code Project 02 với indexing và Q&A có citation vẫn chưa hoàn chỉnh. Có `feature_list.json` ban đầu nhưng chưa có artefact handoff/restart cuối cùng. | Agent có drift qua nhiều tính năng hoặc mất trạng thái sau restart không. |
+| `solution/` | Chunking, metadata, index status và citation-based QA đã hoàn thành, thêm `init.sh`, `session-handoff.md`, `claude-progress.md`, `clean-state-checklist.md`. | Mỗi tính năng có bằng chứng kiểm chứng trước khi đánh dấu pass không. |
+
 ## Công cụ
 
 - Claude Code hoặc Codex

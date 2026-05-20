@@ -11,12 +11,25 @@
 
 选一个实质性的功能升级（比如多轮对话历史、引用面板重设计、文档集合与筛选），三次都做同一个升级，唯一变量是 harness 的角色分工。
 
+## 使用仓库里的项目
+
+仓库路径：`projects/project-05/`
+
+| 目录 | 里面有什么 | 比较什么 |
+|------|------|------|
+| `starter/` | ConversationHistory 升级前的 Project 04 应用。 | 如果要自己重跑三种变体，从这里开始。 |
+| `solution/single-role/` | 一个 agent 规划、实现、自评。 | `evaluator-rubric.md` 评分 1.6/5 和缺陷列表。 |
+| `solution/gen-eval/` | 生成者 + 评估者，有修订证据。 | `evaluator-rubric.md` 评分 3.3/5 和修订记录。 |
+| `solution/plan-gen-eval/` | 规划者 + 生成者 + 评估者。 | `sprint-contract.md`、`evaluator-rubric.md` 评分 4.9/5。 |
+
+已提交的固定功能是多轮问答历史。重跑时保持功能不变，唯一变量是角色分工。
+
 ## 用什么工具
 
 - Claude Code 或 Codex（用于生成和规划角色）
 - 同一个或另一个 agent 实例（用于评估角色）
 - 评估量表（参考 `docs/zh/resources/templates/evaluator-rubric.md`）
-- Sprint contract 模板（参考 `docs/lectures/lecture-11-why-observability-belongs-inside-the-harness/code/sprint-contract.md`）
+- Sprint contract 模板（参考 `docs/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/code/sprint-contract.md`）
 
 ## 具体步骤
 

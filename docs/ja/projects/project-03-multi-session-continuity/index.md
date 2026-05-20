@@ -11,6 +11,15 @@
 
 同じ作業を 2 回実行します。1 回目は制約なし。2 回目は厳格なルールを適用します。
 
+## リポジトリ内のプロジェクトを使う
+
+リポジトリ内のパス: `projects/project-03/`
+
+| ディレクトリ | 含まれるもの | 比較すること |
+|------|------|------|
+| `starter/` | Project 02 のコードで、indexing と citation 付き Q&A がまだ未完成です。初期の `feature_list.json` はありますが、最終的な handoff/restart 成果物はありません。 | 複数機能をまたぐときにエージェントが逸れたり状態を失ったりするか。 |
+| `solution/` | chunking、metadata、index status、citation-based QA が完成し、`init.sh`、`session-handoff.md`、`claude-progress.md`、`clean-state-checklist.md` もあります。 | 各機能が pass になる前に具体的な検証証拠を持つか。 |
+
 ## ツール
 
 - Claude Code または Codex

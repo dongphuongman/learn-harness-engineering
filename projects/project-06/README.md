@@ -14,7 +14,8 @@ Capstone project: build and benchmark a complete harness, then run cleanup loops
 ```sh
 cd starter
 npm install
-# Run the benchmark suite with the weak harness and record the results
+# Run the app and record weak-harness behavior manually.
+# The starter intentionally does not include benchmark.sh or cleanup-scanner.sh.
 
 cd ../solution
 npm install
@@ -28,6 +29,25 @@ npm install
 # Run cleanup scan
 ./scripts/cleanup-scanner.sh
 ```
+
+## Exact Task Contract
+
+Project 06 is a capstone comparison between a complete product with weak harness
+surface and the same product hardened with full harness artifacts. Unlike earlier
+projects, the starter already contains most product functionality. The gap is the
+operating system around the code.
+
+| Area | Starter state | Solution evidence |
+|------|------|------|
+| Product behavior | Import, indexing, QA, history, feedback, reset mostly exist | Same features plus stronger validation and persistence evidence |
+| Harness files | Basic `AGENTS.md`, no `feature_list.json`, no `session-handoff.md`, no clean-state checklist | `AGENTS.md`, `CLAUDE.md`, `feature_list.json`, `init.sh`, `session-handoff.md`, `clean-state-checklist.md` |
+| Quality tracking | Initial `quality-document.md` only | Higher-scored `quality-document.md`, `evaluator-rubric.md` |
+| Benchmarking | No benchmark or cleanup scripts | `scripts/benchmark.sh`, `scripts/cleanup-scanner.sh`, `scripts/check-architecture.sh` |
+| Reliability docs | Minimal docs | `docs/ARCHITECTURE.md`, `docs/PRODUCT.md`, `docs/RELIABILITY.md` |
+
+Do not expect the starter to contain the benchmark commands shown for the
+solution. For the weak-harness run, record manual baseline observations; for the
+solution run, use the checked-in benchmark and cleanup scripts.
 
 ## Features Covered
 
