@@ -49,7 +49,7 @@ flowchart LR
     Checks --> Agent
 ```
 
-**指令子系統**：建立 `AGENTS.md`（或 `CLAUDE.md`），內容包括專案概覽和目的（一句話說清楚這是什麼）、技術堆疊和版本（Python 3.11、FastAPI 0.100+、PostgreSQL 15）、首次執行命令（`make setup`、`make test`）、不可違反的硬約束（「所有 API 必須走 OAuth 2.0」）、指向更詳細文件的連結。
+**指令子系統**：建立 `AGENTS.md`（或 `CLAUDE.md`），記錄專案概覽、技術堆疊版本與執行命令（`make setup`、`make test`）。不可違反的硬約束列在同一份文件，並附上指向各專題文件的連結。
 
 **工具子系統**：讓 agent 有足夠的工具訪問權限。不要因為「安全考慮」把 shell 給禁了，agent 連 `pip install` 都跑不了，還怎麼幹活？但也別什麼都開放，按最小權限原則來。
 

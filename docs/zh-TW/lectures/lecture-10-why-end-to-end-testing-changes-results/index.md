@@ -57,7 +57,7 @@ flowchart LR
     Harness --> Stronger["以後再犯會第一時間報錯"]
 ```
 
-OpenAI 在 Codex 工程實踐中強調：**為 agent 寫的錯誤訊息必須包含修復指導**。不寫 `「Direct filesystem access in renderer」`，而寫 `「Direct filesystem access in renderer. All file operations must go through the preload bridge. Move this call to preload/file-ops.ts and invoke it via window.api.」` 這把架構規則變成了自動修正的閉環。
+OpenAI 在 Codex 工程實踐中強調，**為 agent 寫的錯誤訊息必須包含修復指導**。不寫 `「Direct filesystem access in renderer」`，而寫 `「Direct filesystem access in renderer. All file operations must go through the preload bridge. Move this call to preload/file-ops.ts and invoke it via window.api.」` 這把架構規則變成了自動修正的閉環。
 
 ## 核心概念
 

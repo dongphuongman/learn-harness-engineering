@@ -11,7 +11,7 @@
 
 ## 核心文章
 
-這份清單刻意保持狹窄。這裡的執行環境，指的是模型外部的執行系統，包括代理迴圈、工具執行、沙箱、狀態、脈絡、驗證、終止條件、協調與可觀測性。一般性的提示工程或寬泛的代理框架文章，不放進核心清單。
+這份清單刻意保持狹窄。這裡的執行環境，指的是模型外部的執行系統，涵蓋代理迴圈、工具執行與沙箱，以及狀態管理、驗證與可觀測性。一般性的提示工程或寬泛的代理框架文章，不放進核心清單。
 
 原始的三篇文章仍是課程骨幹：
 
@@ -29,7 +29,7 @@
 
 ## 2026 延伸參考
 
-這些不是課程核心來源，但在設計特定執行環境模組時仍有價值。這一節只保留正文直接討論代理迴圈、工具執行、脈絡管理、驗證、沙箱、控制層或迴歸治理的來源。純產品介紹、平臺公告、團隊案例與 benchmark 文章不放在這裡。
+這些不是課程核心來源，但在設計特定執行環境模組時仍有價值。這一節只保留正文直接討論代理迴圈、工具執行與脈絡管理，或深入分析驗證、沙箱與治理機制的來源。純產品介紹、平臺公告、團隊案例與 benchmark 文章不放在這裡。
 
 - [OpenAI: Unlocking the Codex harness: how we built the App Server](https://openai.com/index/unlocking-the-codex-harness/)（2026-02-04）：把執行環境抽象成可重用的 App Server 協定，涵蓋 thread lifecycle、resume、fork、diff 與客戶端整合。
 - [OpenAI Developers: Run long horizon tasks with Codex](https://developers.openai.com/blog/run-long-horizon-tasks-with-codex)（2026-02-23）：長時任務中的持久專案記憶、里程碑驗證與 done-when 範例。
