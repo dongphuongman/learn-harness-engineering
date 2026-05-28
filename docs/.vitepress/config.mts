@@ -454,37 +454,37 @@ const zhTWLectureItems = [
   { text: "歡迎", link: "/zh-TW/" },
   { text: "模型能力強，不等於執行可靠", link: "/zh-TW/lectures/lecture-01-why-capable-agents-still-fail/" },
   { text: "Harness 到底是什麼", link: "/zh-TW/lectures/lecture-02-what-a-harness-actually-is/" },
-  { text: "讓代碼倉庫成為唯一的事實來源", link: "/zh-TW/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "讓程式碼儲存庫成為唯一的事實來源", link: "/zh-TW/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
   { text: "把指令拆分到不同檔案裡", link: "/zh-TW/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
-  { text: "讓跨會話的任務保持上下文連續", link: "/zh-TW/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "讓跨工作階段的任務保持脈絡連續", link: "/zh-TW/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
   { text: "讓 agent 每次工作前先初始化", link: "/zh-TW/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
   { text: "給 agent 劃清每次任務的邊界", link: "/zh-TW/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
   { text: "用功能清單約束 agent 該做什麼", link: "/zh-TW/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
   { text: "防止 agent 提前宣告完成", link: "/zh-TW/lectures/lecture-09-why-agents-declare-victory-too-early/" },
   { text: "跑通完整流程才算真正驗證", link: "/zh-TW/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
-  { text: "讓 agent 的運行過程可觀測", link: "/zh-TW/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
-  { text: "每次會話結束前都做好交接", link: "/zh-TW/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+  { text: "讓 agent 的執行過程可觀測", link: "/zh-TW/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "每次工作階段結束前都做好交接", link: "/zh-TW/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
 ];
 
 const zhTWProjectItems = [
-  { text: "歡迎", link: "/zh-TW/projects/" },
-  { text: "提示詞驅動 vs 規則驅動", link: "/zh-TW/projects/project-01-baseline-vs-minimal-harness/" },
-  { text: "讓 agent 看懂項目、接住上次的工作", link: "/zh-TW/projects/project-02-agent-readable-workspace/" },
-  { text: "讓 agent 關掉再打開還能接著幹", link: "/zh-TW/projects/project-03-multi-session-continuity/" },
-  { text: "用運行反饋修正 agent 的行為", link: "/zh-TW/projects/project-04-incremental-indexing/" },
-  { text: "讓 agent 自己檢查自己做的對不對", link: "/zh-TW/projects/project-05-grounded-qa-verification/" },
-  { text: "搭建一套完整的 agent 工作環境", link: "/zh-TW/projects/project-06-runtime-observability-and-debugging/" }
+  { text: "歡迎來到專案實戰", link: "/zh-TW/projects/" },
+  { text: "只寫提示詞讓代理做，和定好規則再讓它做，差多少", link: "/zh-TW/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "讓代理看懂專案、銜接上次的工作", link: "/zh-TW/projects/project-02-agent-readable-workspace/" },
+  { text: "讓代理重啟後還能繼續執行", link: "/zh-TW/projects/project-03-multi-session-continuity/" },
+  { text: "用執行回饋修正代理的行為", link: "/zh-TW/projects/project-04-incremental-indexing/" },
+  { text: "讓代理自己檢查自己做得對不對", link: "/zh-TW/projects/project-05-grounded-qa-verification/" },
+  { text: "搭建完整的代理工作環境", link: "/zh-TW/projects/project-06-runtime-observability-and-debugging/" }
 ];
 
 const zhTWResourceItems = [
-  { text: "資料庫總覽", link: "/zh-TW/resources/" },
-  { text: "繁體中文範本", link: "/zh-TW/resources/templates/" },
-  { text: "繁體中文參考", link: "/zh-TW/resources/reference/" },
-  { text: "進階資源包", link: "/zh-TW/resources/openai-advanced/" }
+  { text: "繁體中文資源庫", link: "/zh-TW/resources/" },
+  { text: "範本指南", link: "/zh-TW/resources/templates/" },
+  { text: "參考資料", link: "/zh-TW/resources/reference/" },
+  { text: "OpenAI 高階資源包", link: "/zh-TW/resources/openai-advanced/" }
 ];
 
 const zhTWSkillItems = [
-  { text: "技能總覽", link: "/zh-TW/skills/" }
+  { text: "Skills（技能集）", link: "/zh-TW/skills/" }
 ];
 
 const jaSourceItems = { lectures: jaLectureItems, projects: jaProjectItems, resources: jaResourceItems, skills: jaSkillItems };
