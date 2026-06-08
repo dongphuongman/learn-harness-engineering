@@ -55,11 +55,11 @@ graph TD
 Aqui estão alguns dos conceitos-chave que você dominará:
 
 <ul class="index-list">
-  <li>**Restringir o comportamento do agente** com regras e limites explícitos.</li>
-  <li>**Manter o contexto** em tarefas de longa duração e múltiplas sessões.</li>
-  <li>**Impedir que os agentes** declarem vitória muito cedo.</li>
-  <li>**Verificar o trabalho** usando testes de pipeline completo e auto-reflexão.</li>
-  <li>**Tornar o tempo de execução observável** e depurável.</li>
+  <li><strong>Restringir o comportamento do agente</strong> com regras e limites explícitos.</li>
+  <li><strong>Manter o contexto</strong> em tarefas de longa duração e múltiplas sessões.</li>
+  <li><strong>Impedir que os agentes</strong> declarem vitória muito cedo.</li>
+  <li><strong>Verificar o trabalho</strong> usando testes de pipeline completo e auto-reflexão.</li>
+  <li><strong>Tornar o tempo de execução observável</strong> e depurável.</li>
 </ul>
 
 ## Próximos passos
